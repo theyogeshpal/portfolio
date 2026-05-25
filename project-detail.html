@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details - Yogesh Pal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased selection:bg-orange-500 selection:text-white">
+
+    <!-- Navbar (Simplified) -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center gap-2 group">
+                    <div class="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-700 rounded-xl flex items-center justify-center text-white font-bold text-xl group-hover:scale-105 transition-transform shadow-lg shadow-orange-500/30">
+                        Y
+                    </div>
+                    <span class="font-bold text-xl tracking-tight text-gray-900 group-hover:text-orange-600 transition-colors">Yogesh Pal</span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-orange-600 font-semibold transition-colors flex items-center gap-1"><i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Portfolio</a>
+                </div>
+                <div class="md:hidden">
+                    <a href="index.html" class="text-gray-900 p-2"><i data-lucide="arrow-left"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="pt-32 pb-20 min-h-screen flex flex-col">
+        <div class="max-w-4xl mx-auto px-4 w-full flex-grow">
+            
+            <div id="project-container" class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden hidden">
+                <div class="h-64 md:h-96 bg-gradient-to-br from-gray-800 to-gray-900 relative flex items-center justify-center">
+                    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+                    <i id="p-icon" data-lucide="award" class="w-32 h-32 text-white/50 relative z-10"></i>
+                </div>
+                
+                <div class="p-8 md:p-12">
+                    <div class="mb-4">
+                        <span id="p-category" class="text-orange-600 font-bold tracking-wider text-sm uppercase">Category</span>
+                    </div>
+                    <h1 id="p-title" class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Project Title</h1>
+                    
+                    <div id="p-tech" class="flex flex-wrap gap-2 mb-8">
+                        <!-- Tech stack will be injected here -->
+                    </div>
+                    
+                    <div class="prose max-w-none text-gray-600 text-lg leading-relaxed mb-10">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">About this Project</h3>
+                        <p id="p-description">Project description goes here.</p>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 pt-6 border-t border-gray-100">
+                        <a id="p-link" href="#" target="_blank" class="bg-gradient-to-r from-orange-500 to-orange-700 text-white px-8 py-4 rounded-xl font-semibold hover:shadow-lg hover:shadow-orange-500/30 hover:-translate-y-1 transition-all flex justify-center items-center gap-2">
+                            Visit Live Project
+                            <i data-lucide="external-link" class="w-5 h-5"></i>
+                        </a>
+                        <a href="index.html#projects" class="bg-white text-gray-800 border-2 border-gray-200 px-8 py-4 rounded-xl font-semibold hover:border-orange-500 hover:text-orange-600 transition-all flex justify-center items-center gap-2">
+                            More Projects
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="error-container" class="text-center py-20 hidden">
+                <i data-lucide="alert-circle" class="w-16 h-16 text-orange-500 mx-auto mb-4"></i>
+                <h2 class="text-3xl font-bold text-gray-900 mb-2">Project Not Found</h2>
+                <p class="text-gray-600 mb-6">The project you are looking for does not exist.</p>
+                <a href="index.html#projects" class="inline-flex items-center gap-2 text-orange-600 font-semibold hover:text-orange-700">
+                    <i data-lucide="arrow-left" class="w-4 h-4"></i> Return to Portfolio
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-gray-400 py-12 text-center border-t border-gray-900 mt-auto">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>Made with ❤️ by Yogesh Pal. &copy; <span id="year"></span> All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Load Data and Script -->
+    <script src="data.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Get Project ID from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const projectId = urlParams.get('id');
+        
+        const project = portfolioData.projects[projectId];
+        
+        if (project) {
+            document.getElementById('project-container').classList.remove('hidden');
+            
+            document.getElementById('p-title').textContent = project.title;
+            document.getElementById('p-category').textContent = project.category;
+            document.getElementById('p-description').textContent = project.description;
+            
+            // Set Icon
+            const iconEl = document.getElementById('p-icon');
+            iconEl.setAttribute('data-lucide', project.imageIcon);
+            
+            // Set Tech Stack
+            const techContainer = document.getElementById('p-tech');
+            project.techStack.forEach(tech => {
+                const span = document.createElement('span');
+                span.className = 'font-semibold bg-orange-100 text-orange-600 border border-orange-200 px-3 py-1 rounded-md text-sm';
+                span.textContent = tech;
+                techContainer.appendChild(span);
+            });
+            
+            // Initialize Lucide Icons again because we modified the DOM
+            lucide.createIcons();
+        } else {
+            document.getElementById('error-container').classList.remove('hidden');
+            lucide.createIcons();
+        }
+    </script>
+</body>
+</html>
