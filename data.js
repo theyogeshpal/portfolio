@@ -103,6 +103,7 @@ const portfolioData = {
             "Collaborated with cross-functional teams to deliver high-quality software within tight deadlines.",
             "Mentored junior developers and conducted code reviews to ensure best practices."
         ],
-        image: "assets/digicoders-award.jpg"
+        image: "assets/digicoders-award.png",
+        companyLogo: "assets/digicoders-logo-circle.png"
     }
 };

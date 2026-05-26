@@ -36,9 +36,12 @@
         <div class="max-w-4xl mx-auto px-4 w-full flex-grow">
             
             <div id="exp-container" class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden hidden">
-                <div class="h-48 md:h-64 bg-gradient-to-br from-gray-800 to-gray-900 relative flex items-center justify-center">
+                <div class="h-48 md:h-64 bg-gradient-to-br from-gray-800 to-gray-900 relative flex items-center justify-center overflow-hidden">
                     <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
-                    <i data-lucide="building-2" class="w-24 h-24 text-white/50 relative z-10"></i>
+                    <div id="e-company-logo-container" class="relative z-10 bg-white p-4 rounded-2xl border-4 border-white/10 shadow-2xl hidden">
+                        <img id="e-company-logo" src="" alt="Company Logo" class="w-24 h-24 md:w-32 md:h-32 object-contain mix-blend-multiply">
+                    </div>
+                    <i id="e-company-icon" data-lucide="building-2" class="w-24 h-24 text-white/50 relative z-10"></i>
                 </div>
                 
                 <div class="p-8 md:p-12 relative">
@@ -116,6 +119,16 @@
                 const img = document.getElementById('e-image');
                 img.src = exp.image;
                 imgContainer.classList.remove('hidden');
+            }
+            
+            if (exp.companyLogo) {
+                const logoContainer = document.getElementById('e-company-logo-container');
+                const logo = document.getElementById('e-company-logo');
+                const icon = document.getElementById('e-company-icon');
+                logo.src = exp.companyLogo;
+                logoContainer.classList.remove('hidden');
+                logoContainer.classList.add('flex');
+                if (icon) icon.classList.add('hidden');
             }
             
             // Set Tech Stack
