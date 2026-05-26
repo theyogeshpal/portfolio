@@ -102,6 +102,7 @@ const portfolioData = {
             "Managed MSSQL databases, writing complex queries and utilizing Entity Framework for ORM.",
             "Collaborated with cross-functional teams to deliver high-quality software within tight deadlines.",
             "Mentored junior developers and conducted code reviews to ensure best practices."
-        ]
+        ],
+        image: "assets/digicoders-award.jpg"
     }
 };

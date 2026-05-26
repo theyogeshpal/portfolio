@@ -66,6 +66,10 @@
                         <h3 class="text-2xl font-bold text-gray-900 mb-4">Overview</h3>
                         <p id="e-description" class="mb-6">Description</p>
                         
+                        <div id="e-image-container" class="my-8 rounded-2xl overflow-hidden shadow-xl border-4 border-white bg-gray-100 hidden">
+                            <img id="e-image" src="" alt="Experience Image" class="w-full h-auto max-h-[600px] object-cover hover:scale-105 transition-transform duration-700">
+                        </div>
+                        
                         <h3 class="text-2xl font-bold text-gray-900 mb-4 mt-8">Key Responsibilities & Achievements</h3>
                         <ul id="e-details" class="list-disc pl-6 space-y-3 marker:text-orange-500">
                             <!-- Details injected here -->
@@ -106,6 +110,13 @@
             document.getElementById('e-location').textContent = exp.location;
             document.getElementById('e-duration').textContent = exp.duration;
             document.getElementById('e-description').textContent = exp.description;
+            
+            if (exp.image) {
+                const imgContainer = document.getElementById('e-image-container');
+                const img = document.getElementById('e-image');
+                img.src = exp.image;
+                imgContainer.classList.remove('hidden');
+            }
             
             // Set Tech Stack
             const techContainer = document.getElementById('e-tech');
