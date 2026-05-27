@@ -185,3 +185,47 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// Image Modal functionality
+window.openImageModal = function(src) {
+    const modal = document.getElementById('image-modal');
+    const modalImg = document.getElementById('modal-img');
+    if (modal && modalImg) {
+        modalImg.src = src;
+        modal.classList.remove('hidden');
+        modal.classList.add('flex'); // Add flex back because hidden removed it
+        
+        // slight delay to allow display:flex to apply before animating opacity
+        setTimeout(() => {
+            modal.classList.remove('opacity-0');
+            modalImg.classList.remove('scale-95');
+            modalImg.classList.add('scale-100');
+        }, 10);
+    }
+};
+
+window.closeImageModal = function() {
+    const modal = document.getElementById('image-modal');
+    const modalImg = document.getElementById('modal-img');
+    if (modal && modalImg) {
+        modal.classList.add('opacity-0');
+        modalImg.classList.remove('scale-100');
+        modalImg.classList.add('scale-95');
+        
+        setTimeout(() => {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }, 300); // wait for transition
+    }
+};
+
+// Close modal on click outside image
+document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('image-modal');
+    if (modal) {
+        modal.addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeImageModal();
+            }
+        });
+    }
+});

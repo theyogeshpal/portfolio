@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Details - Yogesh Pal</title>
+    <link rel="shortcut icon" href="assets/yogesh.png" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -36,8 +37,9 @@
         <div class="max-w-4xl mx-auto px-4 w-full flex-grow">
             
             <div id="project-container" class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden hidden">
-                <div class="h-64 md:h-96 bg-gradient-to-br from-gray-800 to-gray-900 relative flex items-center justify-center">
+                <div id="p-image-container" class="h-64 md:h-96 bg-gradient-to-br from-gray-800 to-gray-900 relative flex items-center justify-center overflow-hidden">
                     <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+                    <img id="p-image" src="" alt="Project Image" class="absolute inset-0 w-full h-full object-cover hidden">
                     <i id="p-icon" data-lucide="award" class="w-32 h-32 text-white/50 relative z-10"></i>
                 </div>
                 
@@ -105,9 +107,26 @@
             document.getElementById('p-category').textContent = project.category;
             document.getElementById('p-description').textContent = project.description;
             
-            // Set Icon
-            const iconEl = document.getElementById('p-icon');
-            iconEl.setAttribute('data-lucide', project.imageIcon);
+            // Set Image or Icon
+            if (project.image) {
+                document.getElementById('p-image').src = project.image;
+                document.getElementById('p-image').classList.remove('hidden');
+                document.getElementById('p-icon').classList.add('hidden');
+            } else {
+                const iconEl = document.getElementById('p-icon');
+                iconEl.setAttribute('data-lucide', project.imageIcon);
+                document.getElementById('p-image').classList.add('hidden');
+                document.getElementById('p-icon').classList.remove('hidden');
+            }
+            
+            // Set Link
+            const linkEl = document.getElementById('p-link');
+            if (project.link && project.link !== "#") {
+                linkEl.href = project.link;
+                linkEl.classList.remove('hidden');
+            } else {
+                linkEl.classList.add('hidden');
+            }
             
             // Set Tech Stack
             const techContainer = document.getElementById('p-tech');
