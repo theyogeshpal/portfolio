@@ -1,8 +1,17 @@
 const portfolioData = {
     projects: {
-        "inaamify": {
+        "syncattend": {
             title: "Inaamify WebApp",
-            category: "Software (SAAS)",
+            category: "Attendance management App",
+            techStack: ["Flutter", "Node", "Express", "MongoDB"],
+            description: "SyncAttend is a comprehensive, production-grade attendance and workforce management SAAS solution built using the .NET ecosystem and modern web standards. It provides robust tools for organizations to track real-time attendance, streamline shift scheduling, and manage employee records efficiently. Featuring a highly responsive user interface and a scalable backend architecture backed by secure data practices, the platform is designed to ensure high performance, optimal data integrity, and seamless operational workflow.",
+            imageIcon: "award",
+            link: "https://www.inaamify.com/",
+            image: "./assets/syncAttend.jpeg"
+        },
+        "inaamify": {
+            title: "SyncAttend",
+            category: "",
             techStack: ["React", "Node", "Express", "MongoDB"],
             description: "Inaamify is a comprehensive SAAS software solution built using the MERN stack. It provides robust tools for businesses to manage their operations efficiently, featuring a highly responsive user interface and a scalable backend architecture. Designed with modern web standards to ensure optimal performance and security.",
             imageIcon: "award",

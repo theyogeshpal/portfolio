@@ -58,10 +58,14 @@
                         <p id="p-description">Project description goes here.</p>
                     </div>
                     
-                    <div class="flex flex-col sm:flex-row gap-4 pt-6 border-t border-gray-100">
+                    <div class="flex flex-col sm:flex-row flex-wrap gap-4 pt-6 border-t border-gray-100">
                         <a id="p-link" href="#" target="_blank" class="bg-gradient-to-r from-orange-500 to-orange-700 text-white px-8 py-4 rounded-xl font-semibold hover:shadow-lg hover:shadow-orange-500/30 hover:-translate-y-1 transition-all flex justify-center items-center gap-2">
                             Visit Live Project
                             <i data-lucide="external-link" class="w-5 h-5"></i>
+                        </a>
+                        <a id="p-github" href="#" target="_blank" class="hidden bg-[#24292e] text-white px-8 py-4 rounded-xl font-semibold hover:bg-black hover:shadow-lg hover:-translate-y-1 transition-all justify-center items-center gap-2">
+                            GitHub Code
+                            <i data-lucide="github" class="w-5 h-5"></i>
                         </a>
                         <a href="index.html#projects" class="bg-white text-gray-800 border-2 border-gray-200 px-8 py-4 rounded-xl font-semibold hover:border-orange-500 hover:text-orange-600 transition-all flex justify-center items-center gap-2">
                             More Projects
@@ -126,6 +130,17 @@
                 linkEl.classList.remove('hidden');
             } else {
                 linkEl.classList.add('hidden');
+            }
+            
+            // Set GitHub Link
+            const githubEl = document.getElementById('p-github');
+            if (project.github && project.github !== "#") {
+                githubEl.href = project.github;
+                githubEl.classList.remove('hidden');
+                githubEl.classList.add('flex');
+            } else {
+                githubEl.classList.add('hidden');
+                githubEl.classList.remove('flex');
             }
             
             // Set Tech Stack
