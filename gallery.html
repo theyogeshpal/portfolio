@@ -44,17 +44,36 @@
             <!-- Grid Layout -->
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="gallery-grid">
                 
-                <!-- Example Image Item -->
                 <div class="group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all aspect-[3/4] cursor-pointer" onclick="openGalleryModal(this.querySelector('img').src, 'image')">
-                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Gallery Image" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <img src="assets/gallary/img-1.png" alt="Gallery Image 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                         <span class="text-white font-semibold flex items-center gap-2"><i data-lucide="image" class="w-4 h-4"></i> Photo</span>
                     </div>
                 </div>
 
-                <!-- Example Video Item -->
-                <div class="group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all aspect-[3/4] cursor-pointer" onclick="openGalleryModal('https://www.w3schools.com/html/mov_bbb.mp4', 'video')">
-                    <video src="https://www.w3schools.com/html/mov_bbb.mp4" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" muted loop onmouseover="this.play()" onmouseout="this.pause()"></video>
+                <div class="group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all aspect-[3/4] cursor-pointer" onclick="openGalleryModal(this.querySelector('img').src, 'image')">
+                    <img src="assets/gallary/img-5.jpeg" alt="Gallery Image 5" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <span class="text-white font-semibold flex items-center gap-2"><i data-lucide="image" class="w-4 h-4"></i> Photo</span>
+                    </div>
+                </div>
+
+                <div class="group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all aspect-[3/4] cursor-pointer" onclick="openGalleryModal(this.querySelector('img').src, 'image')">
+                    <img src="assets/gallary/img-6.jpeg" alt="Gallery Image 6" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <span class="text-white font-semibold flex items-center gap-2"><i data-lucide="image" class="w-4 h-4"></i> Photo</span>
+                    </div>
+                </div>
+
+                <div class="group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all aspect-[3/4] cursor-pointer" onclick="openGalleryModal(this.querySelector('img').src, 'image')">
+                    <img src="assets/gallary/img-7.jpeg" alt="Gallery Image 7" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <span class="text-white font-semibold flex items-center gap-2"><i data-lucide="image" class="w-4 h-4"></i> Photo</span>
+                    </div>
+                </div>
+
+                <div class="group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all aspect-[3/4] cursor-pointer" onclick="openGalleryModal('assets/gallary/video-1.mp4', 'video')">
+                    <video autoplay loop src="https://ik.imagekit.io/typ1309/Video%20Project%2011.mp4" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" muted loop onmouseover="this.play()" onmouseout="this.pause()"></video>
                     <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
                         <div class="w-12 h-12 bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center text-white shadow-lg">
                             <i data-lucide="play" class="w-6 h-6 fill-white"></i>
@@ -64,8 +83,6 @@
                         <span class="text-white font-semibold flex items-center gap-2"><i data-lucide="video" class="w-4 h-4"></i> Video</span>
                     </div>
                 </div>
-                
-                <!-- Add more photos and videos here following the above structure -->
                 
             </div>
         </div>

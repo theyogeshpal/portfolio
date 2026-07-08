@@ -6,7 +6,7 @@ const portfolioData = {
             techStack: ["Flutter", "Node", "Express", "MongoDB"],
             description: "SyncAttend is a comprehensive, production-grade attendance and workforce management SAAS solution built using the .NET ecosystem and modern web standards. It provides robust tools for organizations to track real-time attendance, streamline shift scheduling, and manage employee records efficiently. Featuring a highly responsive user interface and a scalable backend architecture backed by secure data practices, the platform is designed to ensure high performance, optimal data integrity, and seamless operational workflow.",
             imageIcon: "award",
-            link: "https://www.inaamify.com/",
+            link: "#",
             image: "./assets/syncAttend.jpeg"
         },
         "inaamify": {
@@ -15,7 +15,7 @@ const portfolioData = {
             techStack: ["React", "Node", "Express", "MongoDB"],
             description: "Inaamify is a comprehensive SAAS software solution built using the MERN stack. It provides robust tools for businesses to manage their operations efficiently, featuring a highly responsive user interface and a scalable backend architecture. Designed with modern web standards to ensure optimal performance and security.",
             imageIcon: "award",
-            link: "https://www.inaamify.com/",
+            link: "#",
             image: "./assets/Inaamify.png"
         },
         "cspartner": {
@@ -24,7 +24,7 @@ const portfolioData = {
             techStack: ["React", "Node", "Express", "MongoDB"],
             description: "CS Partner is an advanced web development platform connecting partners seamlessly. The application leverages a high-performance React frontend coupled with an Express backend, enabling real-time data synchronization and secure partner interactions.",
             imageIcon: "users",
-            link: "https://www.cspartner.in/",
+            link: "#",
             image: "./assets/CSPartner.png"
         },
         "aayansh": {
@@ -33,7 +33,7 @@ const portfolioData = {
             techStack: ["React", "Node", "Express", "MongoDB"],
             description: "Aayansh 360 Services provides 360-degree service solutions. The platform features an intuitive admin dashboard and dynamic client-facing portal, built entirely on the MERN stack to ensure maximum scalability and ease of maintenance.",
             imageIcon: "briefcase",
-            link: "https://www.aayansh360.com/",
+            link: "#",
             image: "./assets/aayansh.png"
         },
         "aurapark": {
