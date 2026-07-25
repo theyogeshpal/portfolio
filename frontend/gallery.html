@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Yogesh Pal</title>
+    <link rel="shortcut icon" href="assets/yogesh.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased selection:bg-orange-500 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 shadow-sm border-b border-gray-100 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center gap-2 group">
+                    <div class="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-700 rounded-xl flex items-center justify-center text-white font-bold text-xl group-hover:scale-105 transition-transform shadow-lg shadow-orange-500/30">
+                        Y
+                    </div>
+                    <span class="font-bold text-xl tracking-tight text-gray-900 group-hover:text-orange-600 transition-colors">Yogesh Pal</span>
+                </a>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-600 hover:text-orange-600 font-semibold transition-colors flex items-center gap-1"><i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Portfolio</a>
+                </div>
+                <div class="md:hidden">
+                    <a href="index.html" class="text-gray-900 p-2"><i data-lucide="arrow-left"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery Section -->
+    <section class="pt-32 pb-20 min-h-screen">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">My Gallery</h1>
+                <p class="text-gray-600 text-lg mb-4">A collection of my moments, events, and work.</p>
+                <div class="w-20 h-1.5 bg-gradient-to-r from-orange-500 to-orange-700 mx-auto rounded-full"></div>
+            </div>
+
+            <!-- Grid Layout -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="gallery-grid">
+                
+                <div class="group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all aspect-[3/4] cursor-pointer" onclick="openGalleryModal(this.querySelector('img').src, 'image')">
+                    <img src="assets/gallary/img-1.png" alt="Gallery Image 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <span class="text-white font-semibold flex items-center gap-2"><i data-lucide="image" class="w-4 h-4"></i> Photo</span>
+                    </div>
+                </div>
+
+                <div class="group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all aspect-[3/4] cursor-pointer" onclick="openGalleryModal(this.querySelector('img').src, 'image')">
+                    <img src="assets/gallary/img-5.jpeg" alt="Gallery Image 5" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <span class="text-white font-semibold flex items-center gap-2"><i data-lucide="image" class="w-4 h-4"></i> Photo</span>
+                    </div>
+                </div>
+
+                <div class="group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all aspect-[3/4] cursor-pointer" onclick="openGalleryModal(this.querySelector('img').src, 'image')">
+                    <img src="assets/gallary/img-6.jpeg" alt="Gallery Image 6" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <span class="text-white font-semibold flex items-center gap-2"><i data-lucide="image" class="w-4 h-4"></i> Photo</span>
+                    </div>
+                </div>
+
+                <div class="group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all aspect-[3/4] cursor-pointer" onclick="openGalleryModal(this.querySelector('img').src, 'image')">
+                    <img src="assets/gallary/img-7.jpeg" alt="Gallery Image 7" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <span class="text-white font-semibold flex items-center gap-2"><i data-lucide="image" class="w-4 h-4"></i> Photo</span>
+                    </div>
+                </div>
+
+                <div class="group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all aspect-[3/4] cursor-pointer" onclick="openGalleryModal('assets/gallary/video-1.mp4', 'video')">
+                    <video autoplay loop src="https://ik.imagekit.io/typ1309/Video%20Project%2011.mp4" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" muted loop onmouseover="this.play()" onmouseout="this.pause()"></video>
+                    <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                        <div class="w-12 h-12 bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center text-white shadow-lg">
+                            <i data-lucide="play" class="w-6 h-6 fill-white"></i>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 pointer-events-none">
+                        <span class="text-white font-semibold flex items-center gap-2"><i data-lucide="video" class="w-4 h-4"></i> Video</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-gray-400 py-12 text-center border-t border-gray-900 mt-auto">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>Made with ❤️ by Yogesh Pal. &copy; <span id="year"></span> All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Gallery Modal (Full Screen Viewer) -->
+    <div id="gallery-modal" class="fixed inset-0 z-[100] bg-black/95 hidden items-center justify-center p-4 opacity-0 transition-opacity duration-300">
+        <button onclick="closeGalleryModal()" class="absolute top-6 right-6 text-white hover:text-orange-500 transition-colors z-[101]">
+            <i data-lucide="x" class="w-10 h-10"></i>
+        </button>
+        <div id="modal-content-container" class="w-full h-full flex items-center justify-center scale-95 transition-transform duration-300">
+            <!-- Content gets injected here by JS -->
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        lucide.createIcons();
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Gallery Modal Logic
+        function openGalleryModal(src, type) {
+            const modal = document.getElementById('gallery-modal');
+            const container = document.getElementById('modal-content-container');
+            
+            container.innerHTML = ''; // clear previous content
+
+            if (type === 'image') {
+                const img = document.createElement('img');
+                img.src = src;
+                img.className = 'max-w-full max-h-full object-contain rounded-lg shadow-2xl';
+                container.appendChild(img);
+            } else if (type === 'video') {
+                const video = document.createElement('video');
+                video.src = src;
+                video.controls = true;
+                video.autoplay = true;
+                video.className = 'max-w-full max-h-[85vh] rounded-lg shadow-2xl outline-none';
+                container.appendChild(video);
+            }
+
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                container.classList.remove('scale-95');
+                container.classList.add('scale-100');
+            }, 10);
+        }
+
+        function closeGalleryModal() {
+            const modal = document.getElementById('gallery-modal');
+            const container = document.getElementById('modal-content-container');
+            
+            // Pause video if playing
+            const video = container.querySelector('video');
+            if (video) video.pause();
+
+            modal.classList.add('opacity-0');
+            container.classList.remove('scale-100');
+            container.classList.add('scale-95');
+            
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                container.innerHTML = ''; // clean up
+            }, 300);
+        }
+
+        // Close on background click
+        document.getElementById('gallery-modal').addEventListener('click', function(e) {
+            if (e.target === this || e.target === document.getElementById('modal-content-container')) {
+                closeGalleryModal();
+            }
+        });
+    </script>
+</body>
+</html>
