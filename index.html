@@ -903,7 +903,7 @@
     <script>
         (async () => {
             try {
-                const res = await fetch('http://theyogeshpal.runasp.net/approved-testimonial');
+                const res = await fetch('https://theyogeshpal.runasp.net/approved-testimonial');
                 const data = await res.json();
                 const list = Array.isArray(data) ? data : (data.data || data.Data || []);
                 document.getElementById('testimonials-loading').classList.add('hidden');
