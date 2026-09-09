@@ -13,7 +13,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto w-full relative z-10">
             <div className="w-full md:w-[65%] lg:w-[60%] text-center md:text-left mx-auto md:mx-0">
                 <div className="text-2xl text-gray-400 mb-6" style={{ fontFamily: 'Caveat, cursive' }}>
-                    <i>hello,</i> Yogesh Pal
+                    Yogesh Pal
                 </div>
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight mb-8 font-mono leading-tight">
                     I am a<br />
