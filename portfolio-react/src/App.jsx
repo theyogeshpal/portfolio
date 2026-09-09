@@ -9,11 +9,17 @@ function ScrollHandler() {
   const location = useLocation();
   useEffect(() => {
     if (window.initPortfolioScript) {
-      // Small timeout to allow React to paint the DOM
       setTimeout(window.initPortfolioScript, 100);
     }
-    window.scrollTo(0, 0);
-  }, [location.pathname]);
+    if (location.hash) {
+        setTimeout(() => {
+            const element = document.getElementById(location.hash.slice(1));
+            if (element) element.scrollIntoView();
+        }, 150);
+    } else {
+        window.scrollTo(0, 0);
+    }
+  }, [location.pathname, location.hash]);
   return null;
 }
 
