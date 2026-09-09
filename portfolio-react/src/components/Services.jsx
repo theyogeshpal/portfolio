@@ -132,7 +132,7 @@ export default function Services() {
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">Starter</h3>
                     <p className="text-gray-500 mb-6">Perfect for small businesses and personal portfolios.</p>
                     <div className="mb-8">
-                        <span className="text-4xl font-black text-gray-900">$99</span>
+                        <span className="text-4xl font-black text-gray-900">$49</span>
                         <span className="text-gray-500 font-medium">/project</span>
                     </div>
                     <ul className="space-y-4 mb-8">
