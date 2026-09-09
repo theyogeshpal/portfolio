@@ -79,7 +79,6 @@
                     <a href="#experience" class="nav-link text-gray-700 hover:text-orange-600 font-semibold relative group py-1">Experience<span class="absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-orange-500 to-orange-700 rounded-full w-0 group-hover:w-full transition-all duration-300"></span></a>
                     <a href="#projects" class="nav-link text-gray-700 hover:text-orange-600 font-semibold relative group py-1">Projects<span class="absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-orange-500 to-orange-700 rounded-full w-0 group-hover:w-full transition-all duration-300"></span></a>
                     <a href="#services" class="nav-link text-gray-700 hover:text-orange-600 font-semibold relative group py-1">Services<span class="absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-orange-500 to-orange-700 rounded-full w-0 group-hover:w-full transition-all duration-300"></span></a>
-                    <a href="#testimonials" class="nav-link text-gray-700 hover:text-orange-600 font-semibold relative group py-1">Reviews<span class="absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-orange-500 to-orange-700 rounded-full w-0 group-hover:w-full transition-all duration-300"></span></a>
                     <a href="gallery.html" class="nav-link text-gray-700 hover:text-orange-600 font-semibold relative group py-1">Gallery<span class="absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-orange-500 to-orange-700 rounded-full w-0 group-hover:w-full transition-all duration-300"></span></a>
                     <a href="#contact" class="bg-gradient-to-r from-orange-500 to-orange-700 text-white px-6 py-2.5 rounded-full font-semibold text-[15px] flex items-center gap-2 hover:shadow-xl hover:shadow-orange-500/30 hover:scale-105 transition-all">
                         Let's Talk
@@ -105,7 +104,6 @@
                 <a href="#experience" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-semibold text-gray-300 hover:text-orange-600 hover:bg-[#1a1a1a]">Experience</a>
                 <a href="#projects" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-semibold text-gray-300 hover:text-orange-600 hover:bg-[#1a1a1a]">Projects</a>
                 <a href="#services" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-semibold text-gray-300 hover:text-orange-600 hover:bg-[#1a1a1a]">Services</a>
-                <a href="#testimonials" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-semibold text-gray-300 hover:text-orange-600 hover:bg-[#1a1a1a]">Reviews</a>
                 <a href="gallery.html" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-semibold text-gray-300 hover:text-orange-600 hover:bg-[#1a1a1a]">Gallery</a>
 
                 <a href="#contact" class="flex mt-4 justify-center items-center gap-2 bg-gradient-to-r from-orange-500 to-orange-700 text-white px-6 py-3 rounded-full font-semibold">
@@ -481,6 +479,26 @@
             
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project SafeDriveTag -->
+                <div data-category="web" class="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onclick="window.location.href='project-detail.html?id=safedrivetag'">
+                    <div class="h-48 bg-gray-200 relative overflow-hidden">
+                        <img src="./assets/safedrivetag.png" onerror="this.src='./assets/fullstack.png'" alt="Project Preview" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gray-900/40 group-hover:bg-gray-900/40 transition-all flex items-center justify-center">
+                            <i data-lucide="shield" class="w-12 h-12 text-white opacity-80 group-hover:opacity-100 group-hover:scale-125 transition-all duration-300"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="text-xs font-semibold bg-orange-100 text-orange-600 px-2.5 py-1 rounded-md">Web</span>
+                            <span class="text-xs font-semibold bg-orange-100 text-orange-600 px-2.5 py-1 rounded-md">Frontend</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors">SafeDriveTag</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Recent web project built for SafeDriveTag.</p>
+                        <div class="flex gap-4">
+                            <a href="#" target="_blank" onclick="event.preventDefault(); event.stopPropagation(); showPrivacyModal();" class="text-sm font-semibold text-orange-600 hover:text-orange-700 flex items-center gap-1 relative z-10"><i data-lucide="external-link" class="w-4 h-4"></i> View Project</a>
+                        </div>
+                    </div>
+                </div>
                 <!-- Project 1 - app -->
                 <div data-category="app" class="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onclick="window.location.href='project-detail.html?id=syncattend'">
 
@@ -770,26 +788,6 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">What People Say</h2>
-                <div class="w-20 h-1.5 bg-gradient-to-r from-orange-500 to-orange-700 mx-auto rounded-full"></div>
-                <p class="mt-4 text-gray-500 text-sm">Real feedback from clients & collaborators</p>
-            </div>
-            <div id="testimonials-loading" class="flex justify-center py-10 text-gray-400">
-                <i data-lucide="loader-2" class="w-6 h-6 animate-spin"></i>
-            </div>
-            <div id="testimonials-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 hidden"></div>
-            <div id="testimonials-empty" class="hidden text-center py-10 text-gray-400 text-sm">No testimonials yet. Be the first!</div>
-            <div class="text-center mt-10">
-                <a href="frontend/admin/write-testimonial.html" class="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-orange-700 text-white font-semibold px-7 py-3 rounded-full hover:shadow-xl hover:shadow-orange-500/30 hover:scale-105 transition-all text-sm">
-                    <i data-lucide="pen-line" class="w-4 h-4"></i> Write a Review
-                </a>
-            </div>
-        </div>
-    </section>
 
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-gray-900 text-white relative overflow-hidden">
@@ -900,39 +898,7 @@
     </div>
 
     <script src="script.js"></script>
-    <script>
-        (async () => {
-            try {
-                const res = await fetch('https://theyogeshpal.runasp.net/approved-testimonial');
-                const data = await res.json();
-                const list = Array.isArray(data) ? data : (data.data || data.Data || []);
-                document.getElementById('testimonials-loading').classList.add('hidden');
-                if (!list.length) { document.getElementById('testimonials-empty').classList.remove('hidden'); return; }
-                const grid = document.getElementById('testimonials-grid');
-                grid.innerHTML = list.map(t => {
-                    const stars = Array.from({length: 5}, (_, i) =>
-                        `<span class="${i < (t.rating || t.Rating || 5) ? 'text-orange-400' : 'text-gray-300'}">★</span>`
-                    ).join('');
-                    return `<div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-all flex flex-col gap-3">
-                        <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center text-white font-bold text-sm flex-shrink-0">${(t.name || t.Name || 'A')[0].toUpperCase()}</div>
-                            <div>
-                                <p class="font-bold text-gray-900 text-sm">${t.name || t.Name || 'Anonymous'}</p>
-                                <p class="text-gray-500 text-xs">${t.designation || t.Designation || ''} ${(t.company || t.Company) ? '@ ' + (t.company || t.Company) : ''}</p>
-                            </div>
-                        </div>
-                        <div class="text-sm">${stars}</div>
-                        <p class="text-gray-600 text-sm leading-relaxed">&ldquo;${t.message || t.Message || t.review || t.Review || ''}&rdquo;</p>
-                    </div>`;
-                }).join('');
-                grid.classList.remove('hidden');
-                lucide.createIcons();
-            } catch {
-                document.getElementById('testimonials-loading').classList.add('hidden');
-                document.getElementById('testimonials-empty').classList.remove('hidden');
-            }
-        })();
-    </script>
+
     <script>
         function showPrivacyModal() {
             const modal = document.getElementById('privacy-modal');

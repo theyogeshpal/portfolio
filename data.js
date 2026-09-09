@@ -1,5 +1,14 @@
 const portfolioData = {
     projects: {
+        "safedrivetag": {
+            title: "SafeDriveTag",
+            category: "Web Development",
+            techStack: ["Web", "Frontend"],
+            description: "A modern, responsive website built for SafeDriveTag.",
+            imageIcon: "shield",
+            link: "#",
+            image: "./assets/safedrivetag.png"
+        },
         "syncattend": {
             title: "Inaamify WebApp",
             category: "Attendance management App",
