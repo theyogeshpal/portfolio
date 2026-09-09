@@ -16,10 +16,11 @@ window.initPortfolioScript = () => {
         
         const scrollThreshold = window.innerWidth >= 768 ? 700 : 550;
         const isScrolled = window.scrollY > scrollThreshold;
-        const baseColor = isScrolled ? 'text-gray-700' : 'text-white';
+        const isHomePage = document.getElementById('home') !== null;
+        const baseColor = (isScrolled || !isHomePage) ? 'text-gray-700' : 'text-white';
         
         if (navbar) {
-            if (isScrolled) {
+            if (isScrolled || !isHomePage) {
                 navbar.classList.add('bg-white/98', 'backdrop-blur-md', 'shadow-md', 'border-b', 'border-gray-100');
                 navbar.classList.remove('bg-transparent');
                 if(navLogoText) { navLogoText.classList.remove('text-white'); navLogoText.classList.add('text-gray-900'); }
