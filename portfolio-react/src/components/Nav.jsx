@@ -24,7 +24,7 @@ export default function Nav() {
                     <a href="/#experience" className="nav-link text-gray-700 hover:text-orange-600 font-semibold relative group py-1">Experience<span className="absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-orange-500 to-orange-700 rounded-full w-0 group-hover:w-full transition-all duration-300"></span></a>
                     <a href="/#projects" className="nav-link text-gray-700 hover:text-orange-600 font-semibold relative group py-1">Projects<span className="absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-orange-500 to-orange-700 rounded-full w-0 group-hover:w-full transition-all duration-300"></span></a>
                     <a href="/services" className="nav-link text-gray-700 hover:text-orange-600 font-semibold relative group py-1">Services<span className="absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-orange-500 to-orange-700 rounded-full w-0 group-hover:w-full transition-all duration-300"></span></a>
-                    <a href="gallery.html" className="nav-link text-gray-700 hover:text-orange-600 font-semibold relative group py-1">Gallery<span className="absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-orange-500 to-orange-700 rounded-full w-0 group-hover:w-full transition-all duration-300"></span></a>
+                    <a href="/gallery" className="nav-link text-gray-700 hover:text-orange-600 font-semibold relative group py-1">Gallery<span className="absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-orange-500 to-orange-700 rounded-full w-0 group-hover:w-full transition-all duration-300"></span></a>
                     <a href="/#contact" className="bg-gradient-to-r from-orange-500 to-orange-700 text-white px-6 py-2.5 rounded-full font-semibold text-[15px] flex items-center gap-2 hover:shadow-xl hover:shadow-orange-500/30 hover:scale-105 transition-all">
                         Let's Talk
                         <i data-lucide="message-circle" className="w-4 h-4"></i>
@@ -48,7 +48,7 @@ export default function Nav() {
                 <a href="/#experience" className="mobile-nav-link block px-3 py-2 rounded-md text-base font-semibold text-gray-300 hover:text-orange-600 hover:bg-[#1a1a1a]">Experience</a>
                 <a href="/#projects" className="mobile-nav-link block px-3 py-2 rounded-md text-base font-semibold text-gray-300 hover:text-orange-600 hover:bg-[#1a1a1a]">Projects</a>
                 <a href="/services" className="mobile-nav-link block px-3 py-2 rounded-md text-base font-semibold text-gray-300 hover:text-orange-600 hover:bg-[#1a1a1a]">Services</a>
-                <a href="gallery.html" className="mobile-nav-link block px-3 py-2 rounded-md text-base font-semibold text-gray-300 hover:text-orange-600 hover:bg-[#1a1a1a]">Gallery</a>
+                <a href="/gallery" className="mobile-nav-link block px-3 py-2 rounded-md text-base font-semibold text-gray-300 hover:text-orange-600 hover:bg-[#1a1a1a]">Gallery</a>
 
                 <a href="/#contact" className="flex mt-4 justify-center items-center gap-2 bg-gradient-to-r from-orange-500 to-orange-700 text-white px-6 py-3 rounded-full font-semibold">
                     Let's Talk

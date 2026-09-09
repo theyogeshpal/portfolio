@@ -4,6 +4,8 @@ import Nav from './components/Nav';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import ServicesPage from './pages/ServicesPage';
+import GalleryPage from './pages/GalleryPage';
+import ProjectDetailPage from './pages/ProjectDetailPage';
 
 function ScrollHandler() {
   const location = useLocation();
@@ -31,6 +33,8 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/services" element={<ServicesPage />} />
+        <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="/project/:id" element={<ProjectDetailPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>
