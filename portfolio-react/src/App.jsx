@@ -13,6 +13,9 @@ function ScrollHandler() {
     if (window.initPortfolioScript) {
       setTimeout(window.initPortfolioScript, 100);
     }
+    if (window.lucide) {
+      setTimeout(window.lucide.createIcons, 100);
+    }
     if (location.hash) {
         setTimeout(() => {
             const element = document.getElementById(location.hash.slice(1));
