@@ -2,6 +2,7 @@ import React from 'react';
  // Make sure to use proper icons
 
 export default function Projects() {
+  const navigate = useNavigate();
   return (
     <>
       <section id="projects" className="py-20 bg-gray-50">
@@ -22,7 +23,7 @@ export default function Projects() {
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <div data-category="web" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick="window.location.href='project-detail.html?id=safedrivetag'">
+                <div data-category="web" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/safedrivetag')}>
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/safedrivetag.png" onerror="this.src='./assets/fullstack.png'" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                         <div className="absolute inset-0 bg-gray-900/40 group-hover:bg-gray-900/40 transition-all flex items-center justify-center">
@@ -43,7 +44,7 @@ export default function Projects() {
                     </div>
                 </div>
                 
-                <div data-category="app" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick="window.location.href='project-detail.html?id=syncattend'">
+                <div data-category="app" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/syncattend')}>
 
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/syncAttend.jpeg" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -66,7 +67,7 @@ export default function Projects() {
                     </div>
                 </div>
                 
-                <div data-category="web" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick="window.location.href='project-detail.html?id=inaamify'">
+                <div data-category="web" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/inaamify')}>
 
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/Inaamify.png" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -90,7 +91,7 @@ export default function Projects() {
                 </div>
 
                 
-                <div data-category="web" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick="window.location.href='project-detail.html?id=cspartner'">
+                <div data-category="web" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/cspartner')}>
 
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/CSPartner.png" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -114,7 +115,7 @@ export default function Projects() {
                 </div>
 
                 
-                <div data-category="web" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick="window.location.href='project-detail.html?id=aayansh'">
+                <div data-category="web" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/aayansh')}>
 
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/aayansh.png" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -137,7 +138,7 @@ export default function Projects() {
                     </div>
                 </div>
                 
-                <div data-category="web" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick="window.location.href='project-detail.html?id=aurapark'">
+                <div data-category="web" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/aurapark')}>
 
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/Aurapark.png" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -155,13 +156,13 @@ export default function Projects() {
                         <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors">AuraPark</h3>
                         <p className="text-gray-600 mb-4 text-sm">Parking Management System (Website + Admin + Super Admin).</p>
                         <div className="flex gap-4">
-                            <a href="https://aurapark-v2.vercel.app/" target="_blank" onClick="event.stopPropagation()" className="text-sm font-semibold text-orange-600 hover:text-orange-700 flex items-center gap-1 relative z-10"><i data-lucide="external-link" className="w-4 h-4"></i> View Project</a>
+                            <a href="https://aurapark-v2.vercel.app/" target="_blank" onClick={(e) => e.stopPropagation()} className="text-sm font-semibold text-orange-600 hover:text-orange-700 flex items-center gap-1 relative z-10"><i data-lucide="external-link" className="w-4 h-4"></i> View Project</a>
                         </div>
                     </div>
                 </div>
 
                 
-                <div data-category="web" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick="window.location.href='project-detail.html?id=amber'">
+                <div data-category="web" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/amber')}>
 
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/amber-archive.png" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -177,13 +178,13 @@ export default function Projects() {
                         <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors">Amber Archives</h3>
                         <p className="text-gray-600 mb-4 text-sm">E-Commerce Website.</p>
                         <div className="flex gap-4">
-                            <a href="https://amber-ecommerce.netlify.app/" target="_blank" onClick="event.stopPropagation()" className="text-sm font-semibold text-orange-600 hover:text-orange-700 flex items-center gap-1 relative z-10"><i data-lucide="external-link" className="w-4 h-4"></i> View Project</a>
+                            <a href="https://amber-ecommerce.netlify.app/" target="_blank" onClick={(e) => e.stopPropagation()} className="text-sm font-semibold text-orange-600 hover:text-orange-700 flex items-center gap-1 relative z-10"><i data-lucide="external-link" className="w-4 h-4"></i> View Project</a>
                         </div>
                     </div>
                 </div>
 
                 
-                <div data-category="web" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick="window.location.href='project-detail.html?id=corearchive'">
+                <div data-category="web" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/corearchive')}>
 
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/core-archive.png" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -201,13 +202,13 @@ export default function Projects() {
                         <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors">Core Archive</h3>
                         <p className="text-gray-600 mb-4 text-sm">Digital Library (Website + Admin Panel).</p>
                         <div className="flex gap-4">
-                            <a href="https://core-archive.netlify.app/" target="_blank" onClick="event.stopPropagation()" className="text-sm font-semibold text-orange-600 hover:text-orange-700 flex items-center gap-1 relative z-10"><i data-lucide="external-link" className="w-4 h-4"></i> View Project</a>
+                            <a href="https://core-archive.netlify.app/" target="_blank" onClick={(e) => e.stopPropagation()} className="text-sm font-semibold text-orange-600 hover:text-orange-700 flex items-center gap-1 relative z-10"><i data-lucide="external-link" className="w-4 h-4"></i> View Project</a>
                         </div>
                     </div>
                 </div>
 
                 
-                <div data-category="web" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick="window.location.href='project-detail.html?id=syntax'">
+                <div data-category="web" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/syntax')}>
 
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/Syntax-academy.png" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -224,13 +225,13 @@ export default function Projects() {
                         <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors">Syntax Academy</h3>
                         <p className="text-gray-600 mb-4 text-sm">Student Management System (Website + Admin Panel).</p>
                         <div className="flex gap-4">
-                            <a href="https://syntax-academy.runasp.net/" target="_blank" onClick="event.stopPropagation()" className="text-sm font-semibold text-orange-600 hover:text-orange-700 flex items-center gap-1 relative z-10"><i data-lucide="external-link" className="w-4 h-4"></i> View Project</a>
+                            <a href="https://syntax-academy.runasp.net/" target="_blank" onClick={(e) => e.stopPropagation()} className="text-sm font-semibold text-orange-600 hover:text-orange-700 flex items-center gap-1 relative z-10"><i data-lucide="external-link" className="w-4 h-4"></i> View Project</a>
                         </div>
                     </div>
                 </div>
 
                 
-                <div data-category="web" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick="window.location.href='project-detail.html?id=riskflight'">
+                <div data-category="web" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/riskflight')}>
 
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/risk-flight.png" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -247,13 +248,13 @@ export default function Projects() {
                         <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors">RiskFlight</h3>
                         <p className="text-gray-600 mb-4 text-sm">Library Management System.</p>
                         <div className="flex gap-4">
-                            <a href="https://library-vijy.onrender.com/" target="_blank" onClick="event.stopPropagation()" className="text-sm font-semibold text-orange-600 hover:text-orange-700 flex items-center gap-1 relative z-10"><i data-lucide="external-link" className="w-4 h-4"></i> View Project</a>
+                            <a href="https://library-vijy.onrender.com/" target="_blank" onClick={(e) => e.stopPropagation()} className="text-sm font-semibold text-orange-600 hover:text-orange-700 flex items-center gap-1 relative z-10"><i data-lucide="external-link" className="w-4 h-4"></i> View Project</a>
                         </div>
                     </div>
                 </div>
 
                 
-                <div data-category="web" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick="window.location.href='project-detail.html?id=nurture'">
+                <div data-category="web" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/nurture')}>
 
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/nurture.png" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -270,7 +271,7 @@ export default function Projects() {
                         <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors">Nurture Nest</h3>
                         <p className="text-gray-600 mb-4 text-sm">Non Government Organization Website.</p>
                         <div className="flex gap-4">
-                            <a href="https://nurture-nest-foundation.netlify.app/" target="_blank" onClick="event.stopPropagation()" className="text-sm font-semibold text-orange-600 hover:text-orange-700 flex items-center gap-1 relative z-10"><i data-lucide="external-link" className="w-4 h-4"></i> View Project</a>
+                            <a href="https://nurture-nest-foundation.netlify.app/" target="_blank" onClick={(e) => e.stopPropagation()} className="text-sm font-semibold text-orange-600 hover:text-orange-700 flex items-center gap-1 relative z-10"><i data-lucide="external-link" className="w-4 h-4"></i> View Project</a>
                         </div>
                     </div>
                 </div>
@@ -279,7 +280,7 @@ export default function Projects() {
                 
 
                 
-                <div data-category="web" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick="window.location.href='project-detail.html?id=portfolio'">
+                <div data-category="web" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/portfolio')}>
 
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/fullstack.png" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -297,7 +298,7 @@ export default function Projects() {
                         <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors">Er. Yogesh Pal</h3>
                         <p className="text-gray-600 mb-4 text-sm">Personal Portfolio Website.</p>
                         <div className="flex gap-4">
-                            <a href="https://yogesh-pal.netlify.app/" target="_blank" onClick="event.stopPropagation()" className="text-sm font-semibold text-orange-600 hover:text-orange-700 flex items-center gap-1 relative z-10"><i data-lucide="external-link" className="w-4 h-4"></i> View Project</a>
+                            <a href="https://yogesh-pal.netlify.app/" target="_blank" onClick={(e) => e.stopPropagation()} className="text-sm font-semibold text-orange-600 hover:text-orange-700 flex items-center gap-1 relative z-10"><i data-lucide="external-link" className="w-4 h-4"></i> View Project</a>
                         </div>
                     </div>
                 </div>
