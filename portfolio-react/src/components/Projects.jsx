@@ -23,7 +23,7 @@ export default function Projects() {
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <div data-category="web" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/safedrivetag')}>
+                <div data-category="web" className="project-card min-w-[85vw] md:min-w-[400px] snap-center shrink-0 block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/safedrivetag')}>
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/safedrivetag.png" onerror="this.src='./assets/fullstack.png'" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                         <div className="absolute inset-0 bg-gray-900/40 group-hover:bg-gray-900/40 transition-all flex items-center justify-center">
@@ -44,7 +44,7 @@ export default function Projects() {
                     </div>
                 </div>
                 
-                <div data-category="app" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/syncattend')}>
+                <div data-category="app" className="project-card min-w-[85vw] md:min-w-[400px] snap-center shrink-0 block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/syncattend')}>
 
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/syncAttend.jpeg" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -67,7 +67,7 @@ export default function Projects() {
                     </div>
                 </div>
                 
-                <div data-category="web" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/inaamify')}>
+                <div data-category="web" className="project-card min-w-[85vw] md:min-w-[400px] snap-center shrink-0 block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/inaamify')}>
 
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/Inaamify.png" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -91,7 +91,7 @@ export default function Projects() {
                 </div>
 
                 
-                <div data-category="web" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/cspartner')}>
+                <div data-category="web" className="project-card min-w-[85vw] md:min-w-[400px] snap-center shrink-0 block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/cspartner')}>
 
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/CSPartner.png" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -115,7 +115,7 @@ export default function Projects() {
                 </div>
 
                 
-                <div data-category="web" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/aayansh')}>
+                <div data-category="web" className="project-card min-w-[85vw] md:min-w-[400px] snap-center shrink-0 block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/aayansh')}>
 
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/aayansh.png" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -138,7 +138,7 @@ export default function Projects() {
                     </div>
                 </div>
                 
-                <div data-category="web" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/aurapark')}>
+                <div data-category="web" className="project-card min-w-[85vw] md:min-w-[400px] snap-center shrink-0 block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/aurapark')}>
 
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/Aurapark.png" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -162,7 +162,7 @@ export default function Projects() {
                 </div>
 
                 
-                <div data-category="web" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/amber')}>
+                <div data-category="web" className="project-card min-w-[85vw] md:min-w-[400px] snap-center shrink-0 block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/amber')}>
 
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/amber-archive.png" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -184,7 +184,7 @@ export default function Projects() {
                 </div>
 
                 
-                <div data-category="web" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/corearchive')}>
+                <div data-category="web" className="project-card min-w-[85vw] md:min-w-[400px] snap-center shrink-0 block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/corearchive')}>
 
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/core-archive.png" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -208,7 +208,7 @@ export default function Projects() {
                 </div>
 
                 
-                <div data-category="web" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/syntax')}>
+                <div data-category="web" className="project-card min-w-[85vw] md:min-w-[400px] snap-center shrink-0 block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/syntax')}>
 
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/Syntax-academy.png" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -231,7 +231,7 @@ export default function Projects() {
                 </div>
 
                 
-                <div data-category="web" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/riskflight')}>
+                <div data-category="web" className="project-card min-w-[85vw] md:min-w-[400px] snap-center shrink-0 block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/riskflight')}>
 
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/risk-flight.png" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -254,7 +254,7 @@ export default function Projects() {
                 </div>
 
                 
-                <div data-category="web" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/nurture')}>
+                <div data-category="web" className="project-card min-w-[85vw] md:min-w-[400px] snap-center shrink-0 block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/nurture')}>
 
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/nurture.png" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -280,7 +280,7 @@ export default function Projects() {
                 
 
                 
-                <div data-category="web" className="project-card block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/portfolio')}>
+                <div data-category="web" className="project-card min-w-[85vw] md:min-w-[400px] snap-center shrink-0 block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onClick={() => navigate('/project/portfolio')}>
 
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/fullstack.png" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
