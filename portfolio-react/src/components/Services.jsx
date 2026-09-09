@@ -146,7 +146,7 @@ export default function Services() {
                             <i data-lucide="check-circle-2" className="w-5 h-5 text-emerald-500"></i> Basic SEO Optimization
                         </li>
                         <li className="flex items-center gap-3 text-gray-700">
-                            <i data-lucide="check-circle-2" className="w-5 h-5 text-emerald-500"></i> 1 Month Support
+                            <i data-lucide="check-circle-2" className="w-5 h-5 text-emerald-500"></i> 3 Months Support
                         </li>
                     </ul>
                     <a href="/#contact" className="block w-full text-center bg-gray-100 text-gray-900 font-bold py-3 rounded-xl hover:bg-gray-200 transition-colors">Get Started</a>
@@ -175,7 +175,7 @@ export default function Services() {
                             <i data-lucide="check-circle-2" className="w-5 h-5 text-orange-500"></i> Advanced UI/UX & Animations
                         </li>
                         <li className="flex items-center gap-3 text-gray-300">
-                            <i data-lucide="check-circle-2" className="w-5 h-5 text-orange-500"></i> 3 Months Support
+                            <i data-lucide="check-circle-2" className="w-5 h-5 text-orange-500"></i> 6 Months Support
                         </li>
                     </ul>
                     <a href="/#contact" className="block w-full text-center bg-gradient-to-r from-orange-500 to-orange-700 text-white font-bold py-3 rounded-xl hover:shadow-lg hover:shadow-orange-500/30 transition-all">Get Started</a>
