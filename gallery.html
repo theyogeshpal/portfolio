@@ -75,36 +75,36 @@
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                         
-                        <div class="group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all aspect-[3/4] cursor-pointer" onClick={() => openModal('/assets/gallary/img-1.png', 'image')}>
+                        <div class="group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all aspect-[3/4] cursor-pointer" onclick="openModal('/assets/gallary/img-1.png', 'image')">
                             <img src="/assets/gallary/img-1.png" alt="Gallery Image 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                             <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                                 <span class="text-white font-semibold flex items-center gap-2"><i data-lucide="image" class="w-4 h-4"></i> Photo</span>
                             </div>
                         </div>
 
-                        <div class="group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all aspect-[3/4] cursor-pointer" onClick={() => openModal('/assets/gallary/img-5.jpeg', 'image')}>
+                        <div class="group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all aspect-[3/4] cursor-pointer" onclick="openModal('/assets/gallary/img-5.jpeg', 'image')">
                             <img src="/assets/gallary/img-5.jpeg" alt="Gallery Image 5" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                             <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                                 <span class="text-white font-semibold flex items-center gap-2"><i data-lucide="image" class="w-4 h-4"></i> Photo</span>
                             </div>
                         </div>
 
-                        <div class="group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all aspect-[3/4] cursor-pointer" onClick={() => openModal('/assets/gallary/img-6.jpeg', 'image')}>
+                        <div class="group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all aspect-[3/4] cursor-pointer" onclick="openModal('/assets/gallary/img-6.jpeg', 'image')">
                             <img src="/assets/gallary/img-6.jpeg" alt="Gallery Image 6" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                             <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                                 <span class="text-white font-semibold flex items-center gap-2"><i data-lucide="image" class="w-4 h-4"></i> Photo</span>
                             </div>
                         </div>
 
-                        <div class="group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all aspect-[3/4] cursor-pointer" onClick={() => openModal('/assets/gallary/img-7.jpeg', 'image')}>
+                        <div class="group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all aspect-[3/4] cursor-pointer" onclick="openModal('/assets/gallary/img-7.jpeg', 'image')">
                             <img src="/assets/gallary/img-7.jpeg" alt="Gallery Image 7" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                             <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                                 <span class="text-white font-semibold flex items-center gap-2"><i data-lucide="image" class="w-4 h-4"></i> Photo</span>
                             </div>
                         </div>
 
-                        <div class="group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all aspect-[3/4] cursor-pointer" onClick={() => openModal('https://ik.imagekit.io/typ1309/Video%20Project%2011.mp4', 'video')}>
-                            <video autoPlay loop src="https://ik.imagekit.io/typ1309/Video%20Project%2011.mp4" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" muted onMouseOver={(e)=>e.target.play()} onMouseOut={(e)=>e.target.pause()}></video>
+                        <div class="group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all aspect-[3/4] cursor-pointer" onclick="openModal('https://ik.imagekit.io/typ1309/Video%20Project%2011.mp4', 'video')">
+                            <video autoplay loop src="https://ik.imagekit.io/typ1309/Video%20Project%2011.mp4" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" muted onmouseover="this.play()" onmouseout="this.pause()"></video>
                             <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
                                 <div class="w-12 h-12 bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center text-white shadow-lg">
                                     <i data-lucide="play" class="w-6 h-6 fill-white"></i>
@@ -119,26 +119,26 @@
                 </div>
             </section>
 
-            {modal.isOpen && (
-                <div class="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center p-4 transition-opacity duration-300" onClick={closeModal}>
-                    <button onClick={closeModal} class="absolute top-6 right-6 text-white hover:text-orange-500 transition-colors z-[101]">
+            
+                <div id="gallery-modal" class="hidden fixed inset-0 z-[100] bg-black/95 flex items-center justify-center p-4 transition-opacity duration-300" onclick="closeModal()">
+                    <button onclick="closeModal()" class="absolute top-6 right-6 text-white hover:text-orange-500 transition-colors z-[101]">
                         <i data-lucide="x" class="w-10 h-10"></i>
                     </button>
                     <div class="w-full h-full flex items-center justify-center transition-transform duration-300" onclick="event.stopPropagation()">
-                        {modal.type === 'image' ? (
-                            <img src={modal.src} class="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl" />
-                        ) : (
-                            <video src={modal.src} controls autoPlay class="max-w-full max-h-[85vh] rounded-lg shadow-2xl outline-none"></video>
-                        )}
+                        <div id="modal-content-container">
+                            <img id="modal-image" src="" class="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl" />
+                        
+                            <video id="modal-video" src="" controls autoplay class="max-w-full max-h-[85vh] rounded-lg shadow-2xl outline-none"></video>
+                        
                     </div>
                 </div>
-            )}
+            
         </div>
 <footer class="bg-[#050505] text-gray-400 pt-20 pb-10 border-t border-gray-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 
-                {/* Brand Section */}
+                
                 <div class="lg:col-span-1">
                     <a href="index.html#home" class="text-3xl font-bold text-white tracking-tight flex items-center gap-1 mb-6">
                         <span class="text-orange-600">Yogesh</span>Pal
@@ -159,7 +159,7 @@
                     </div>
                 </div>
 
-                {/* Quick Links */}
+                
                 <div>
                     <h3 class="text-white font-bold text-lg mb-6">Company</h3>
                     <ul class="space-y-4">
@@ -170,7 +170,7 @@
                     </ul>
                 </div>
 
-                {/* Services */}
+                
                 <div>
                     <h3 class="text-white font-bold text-lg mb-6">Services</h3>
                     <ul class="space-y-4">
@@ -181,7 +181,7 @@
                     </ul>
                 </div>
 
-                {/* Newsletter */}
+                
                 <div>
                     <h3 class="text-white font-bold text-lg mb-6">Newsletter</h3>
                     <p class="text-sm text-gray-500 mb-4">Subscribe to get the latest insights and updates.</p>
@@ -195,10 +195,10 @@
 
             </div>
 
-            {/* Bottom Bar */}
+            
             <div class="pt-8 border-t border-gray-900 flex flex-col md:flex-row justify-between items-center gap-4">
                 <p class="text-sm">
-                    &copy; {new Date().getFullYear()} Yogesh Pal. All rights reserved.
+                    &copy; 2026 Yogesh Pal. All rights reserved.
                 </p>
                 <div class="flex gap-6 text-sm">
                     <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>

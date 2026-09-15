@@ -229,3 +229,29 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+window.openModal = function(src, type) {
+    const modal = document.getElementById('gallery-modal');
+    const img = document.getElementById('modal-image');
+    const vid = document.getElementById('modal-video');
+    if (modal) {
+        modal.classList.remove('hidden');
+        if (type === 'image') {
+            img.src = src;
+            img.style.display = 'block';
+            vid.style.display = 'none';
+        } else {
+            vid.src = src;
+            vid.style.display = 'block';
+            img.style.display = 'none';
+        }
+    }
+};
+window.closeModal = function() {
+    const modal = document.getElementById('gallery-modal');
+    const vid = document.getElementById('modal-video');
+    if (modal) {
+        modal.classList.add('hidden');
+        if(vid) vid.pause();
+    }
+};
