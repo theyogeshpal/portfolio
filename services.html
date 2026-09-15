@@ -99,31 +99,151 @@
             </div>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {services.map((service, index) => (
-                    <div key={index} class="group bg-white p-8 rounded-3xl shadow-lg shadow-gray-200/50 border border-gray-100 hover:shadow-2xl hover:shadow-orange-500/10 hover:-translate-y-2 transition-all duration-300 relative overflow-hidden">
-                        
-                        <div class="absolute inset-0 bg-gradient-to-br from-orange-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        
-                        <div class="relative z-10">
-                            <div class="flex justify-between items-start mb-6">
-                                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br ${service.color} flex items-center justify-center text-white shadow-lg transform group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
-                                    <i data-lucide={service.icon} class="w-7 h-7"></i>
-                                </div>
-                                <div class="text-gray-200 font-black text-5xl opacity-40">{service.id}</div>
-                            </div>
-                            
-                            <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-orange-700 transition-colors">{service.title}</h3>
-                            <p class="text-gray-600 mb-6 leading-relaxed">
-                                {service.description}
-                            </p>
-                            
-                            <div class="pt-6 border-t border-gray-100">
-                                <p class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Tech Stack</p>
-                                <p class="text-sm font-semibold text-gray-800">{service.techStack}</p>
-                            </div>
-                        </div>
-                    </div>
-                ))}
+                
+          <div class="group bg-[#111111] border border-gray-800 rounded-3xl p-8 hover:border-gray-700 hover:bg-[#151515] transition-all duration-300 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-500 to-indigo-600 opacity-[0.03] rounded-bl-full group-hover:opacity-[0.08] transition-opacity"></div>
+            
+            <div class="flex items-start justify-between mb-8">
+              <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 p-[1px]">
+                <div class="w-full h-full bg-[#111111] rounded-2xl flex items-center justify-center group-hover:bg-opacity-0 transition-all duration-300">
+                  <i data-lucide="layout" class="w-7 h-7 text-white animate-float"></i>
+                </div>
+              </div>
+              <span class="text-4xl font-black text-gray-800 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-500 to-indigo-600 transition-all opacity-50">01</span>
+            </div>
+
+            <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-500 to-indigo-600 transition-all">Custom Web Application Development</h3>
+            
+            <p class="text-gray-400 mb-6 leading-relaxed">
+              End-to-end web solutions built with modern frameworks. We deliver scalable, secure, and lightning-fast web apps tailored to your business needs.
+            </p>
+
+            <div class="pt-6 border-t border-gray-800">
+              <p class="text-sm font-semibold text-gray-500 mb-2">Primary Tech Stack</p>
+              <p class="text-sm text-gray-300 font-mono">React.js • Next.js • Tailwind CSS • Vite</p>
+            </div>
+          </div>
+    
+          <div class="group bg-[#111111] border border-gray-800 rounded-3xl p-8 hover:border-gray-700 hover:bg-[#151515] transition-all duration-300 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-orange-500 to-orange-700 opacity-[0.03] rounded-bl-full group-hover:opacity-[0.08] transition-opacity"></div>
+            
+            <div class="flex items-start justify-between mb-8">
+              <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-orange-500 to-orange-700 p-[1px]">
+                <div class="w-full h-full bg-[#111111] rounded-2xl flex items-center justify-center group-hover:bg-opacity-0 transition-all duration-300">
+                  <i data-lucide="smartphone" class="w-7 h-7 text-white animate-float"></i>
+                </div>
+              </div>
+              <span class="text-4xl font-black text-gray-800 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-orange-500 to-orange-700 transition-all opacity-50">02</span>
+            </div>
+
+            <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-orange-500 to-orange-700 transition-all">Mobile App Development</h3>
+            
+            <p class="text-gray-400 mb-6 leading-relaxed">
+              High-performance native and cross-platform mobile applications for iOS and Android that provide seamless user experiences and robust functionality.
+            </p>
+
+            <div class="pt-6 border-t border-gray-800">
+              <p class="text-sm font-semibold text-gray-500 mb-2">Primary Tech Stack</p>
+              <p class="text-sm text-gray-300 font-mono">React Native • Flutter • iOS • Android</p>
+            </div>
+          </div>
+    
+          <div class="group bg-[#111111] border border-gray-800 rounded-3xl p-8 hover:border-gray-700 hover:bg-[#151515] transition-all duration-300 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-emerald-500 to-teal-700 opacity-[0.03] rounded-bl-full group-hover:opacity-[0.08] transition-opacity"></div>
+            
+            <div class="flex items-start justify-between mb-8">
+              <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-700 p-[1px]">
+                <div class="w-full h-full bg-[#111111] rounded-2xl flex items-center justify-center group-hover:bg-opacity-0 transition-all duration-300">
+                  <i data-lucide="server" class="w-7 h-7 text-white animate-float"></i>
+                </div>
+              </div>
+              <span class="text-4xl font-black text-gray-800 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-emerald-500 to-teal-700 transition-all opacity-50">03</span>
+            </div>
+
+            <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-emerald-500 to-teal-700 transition-all">Backend & API Architecture</h3>
+            
+            <p class="text-gray-400 mb-6 leading-relaxed">
+              Robust, secure, and scalable backend systems and REST/GraphQL APIs that power your applications and handle thousands of concurrent users.
+            </p>
+
+            <div class="pt-6 border-t border-gray-800">
+              <p class="text-sm font-semibold text-gray-500 mb-2">Primary Tech Stack</p>
+              <p class="text-sm text-gray-300 font-mono">Node.js • ASP.NET Core • Express • MongoDB • SQL</p>
+            </div>
+          </div>
+    
+          <div class="group bg-[#111111] border border-gray-800 rounded-3xl p-8 hover:border-gray-700 hover:bg-[#151515] transition-all duration-300 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-purple-500 to-pink-600 opacity-[0.03] rounded-bl-full group-hover:opacity-[0.08] transition-opacity"></div>
+            
+            <div class="flex items-start justify-between mb-8">
+              <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-600 p-[1px]">
+                <div class="w-full h-full bg-[#111111] rounded-2xl flex items-center justify-center group-hover:bg-opacity-0 transition-all duration-300">
+                  <i data-lucide="shopping-bag" class="w-7 h-7 text-white animate-float"></i>
+                </div>
+              </div>
+              <span class="text-4xl font-black text-gray-800 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-500 to-pink-600 transition-all opacity-50">04</span>
+            </div>
+
+            <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-500 to-pink-600 transition-all">E-Commerce Solutions</h3>
+            
+            <p class="text-gray-400 mb-6 leading-relaxed">
+              Conversion-optimized online stores and digital marketplaces with secure payment gateways, inventory management, and intuitive admin dashboards.
+            </p>
+
+            <div class="pt-6 border-t border-gray-800">
+              <p class="text-sm font-semibold text-gray-500 mb-2">Primary Tech Stack</p>
+              <p class="text-sm text-gray-300 font-mono">MERN Stack • Shopify • Stripe Integration</p>
+            </div>
+          </div>
+    
+          <div class="group bg-[#111111] border border-gray-800 rounded-3xl p-8 hover:border-gray-700 hover:bg-[#151515] transition-all duration-300 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-rose-500 to-red-700 opacity-[0.03] rounded-bl-full group-hover:opacity-[0.08] transition-opacity"></div>
+            
+            <div class="flex items-start justify-between mb-8">
+              <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-rose-500 to-red-700 p-[1px]">
+                <div class="w-full h-full bg-[#111111] rounded-2xl flex items-center justify-center group-hover:bg-opacity-0 transition-all duration-300">
+                  <i data-lucide="pen-tool" class="w-7 h-7 text-white animate-float"></i>
+                </div>
+              </div>
+              <span class="text-4xl font-black text-gray-800 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-rose-500 to-red-700 transition-all opacity-50">05</span>
+            </div>
+
+            <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-rose-500 to-red-700 transition-all">UI/UX Design & Prototyping</h3>
+            
+            <p class="text-gray-400 mb-6 leading-relaxed">
+              User-centric interface designs that captivate audiences. We turn complex ideas into beautiful, intuitive, and pixel-perfect digital experiences.
+            </p>
+
+            <div class="pt-6 border-t border-gray-800">
+              <p class="text-sm font-semibold text-gray-500 mb-2">Primary Tech Stack</p>
+              <p class="text-sm text-gray-300 font-mono">Figma • Adobe XD • Wireframing • User Research</p>
+            </div>
+          </div>
+    
+          <div class="group bg-[#111111] border border-gray-800 rounded-3xl p-8 hover:border-gray-700 hover:bg-[#151515] transition-all duration-300 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-cyan-500 to-blue-700 opacity-[0.03] rounded-bl-full group-hover:opacity-[0.08] transition-opacity"></div>
+            
+            <div class="flex items-start justify-between mb-8">
+              <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-700 p-[1px]">
+                <div class="w-full h-full bg-[#111111] rounded-2xl flex items-center justify-center group-hover:bg-opacity-0 transition-all duration-300">
+                  <i data-lucide="cloud" class="w-7 h-7 text-white animate-float"></i>
+                </div>
+              </div>
+              <span class="text-4xl font-black text-gray-800 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-cyan-500 to-blue-700 transition-all opacity-50">06</span>
+            </div>
+
+            <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-cyan-500 to-blue-700 transition-all">Cloud Deployment & DevOps</h3>
+            
+            <p class="text-gray-400 mb-6 leading-relaxed">
+              Automated CI/CD pipelines, secure cloud hosting, and infrastructure setup to ensure your applications have 99.9% uptime and scale effortlessly.
+            </p>
+
+            <div class="pt-6 border-t border-gray-800">
+              <p class="text-sm font-semibold text-gray-500 mb-2">Primary Tech Stack</p>
+              <p class="text-sm text-gray-300 font-mono">AWS • Azure • Vercel • Docker • GitHub Actions</p>
+            </div>
+          </div>
+    
             </div>
         </div>
       </section>
