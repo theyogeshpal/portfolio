@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage';
 import ServicesPage from './pages/ServicesPage';
 import GalleryPage from './pages/GalleryPage';
 import ProjectDetailPage from './pages/ProjectDetailPage';
+import AllProjectsPage from './pages/AllProjectsPage';
 
 function ScrollHandler() {
   const location = useLocation();
@@ -38,6 +39,7 @@ function App() {
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/project/:id" element={<ProjectDetailPage />} />
+        <Route path="/projects" element={<AllProjectsPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>
