@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
  // Make sure to use proper icons
 
 export default function Projects({ isSlider = true }) {
@@ -21,7 +22,7 @@ export default function Projects({ isSlider = true }) {
             
             
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className={isSlider ? "flex overflow-x-auto gap-8 pb-8 snap-x snap-mandatory scroll-smooth hide-scrollbar" : "grid md:grid-cols-2 lg:grid-cols-3 gap-8"} style={isSlider ? { scrollbarWidth: "none", msOverflowStyle: "none" } : {}}>
                 
                 <div data-category="web" className={`project-card block ${isSlider ? "min-w-[85vw] md:min-w-[400px] snap-center shrink-0" : ""} bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer`} onClick={() => navigate('/project/safedrivetag')}>
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
