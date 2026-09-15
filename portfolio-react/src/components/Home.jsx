@@ -7,7 +7,7 @@ export default function Home() {
       <section id="home" className="relative pt-20 pb-28 md:pt-36 md:pb-36 px-4 bg-[#0a0a0a] overflow-hidden min-h-[95vh] flex items-center">
         
         <div className="absolute bottom-0 right-0 h-[85%] md:h-[95%] w-full flex justify-end items-end z-0 translate-x-[25%] md:translate-x-[25%] opacity-60 md:opacity-100 pointer-events-none">
-            <img src="assets/hero-image.png" alt="Yogesh Pal" className="h-full w-auto object-contain object-bottom grayscale opacity-90 mix-blend-luminosity scale-[1.4] sm:scale-[1.2] md:scale-100 origin-bottom-right" />
+            <img src="assets/hero-image.png" alt="Yogesh Pal" className="h-full w-auto object-contain object-bottom grayscale opacity-90 mix-blend-luminosity scale-[1.4] sm:scale-[1.2] md:scale-100 origin-bottom-right animate-float-slow" />
         </div>
 
         <div className="max-w-7xl mx-auto w-full relative z-10">

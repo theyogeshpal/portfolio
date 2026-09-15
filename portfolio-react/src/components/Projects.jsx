@@ -28,7 +28,7 @@ export default function Projects({ isSlider = true }) {
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/safedrivetag.png" onerror="this.src='./assets/fullstack.png'" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                         <div className="absolute inset-0 bg-gray-900/40 group-hover:bg-gray-900/40 transition-all flex items-center justify-center">
-                            <i data-lucide="shield" className="w-12 h-12 text-white opacity-80 group-hover:opacity-100 group-hover:scale-125 transition-all duration-300"></i>
+                            <i data-lucide="shield" className="w-12 h-12 text-white animate-float opacity-80 group-hover:opacity-100 group-hover:scale-125 transition-all duration-300"></i>
                         </div>
                     </div>
                     <div className="p-6">
@@ -50,7 +50,7 @@ export default function Projects({ isSlider = true }) {
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/syncAttend.jpeg" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                         <div className="absolute inset-0 bg-gray-900/40 group-hover:bg-gray-900/40 transition-all flex items-center justify-center">
-                            <i data-lucide="award" className="w-12 h-12 text-white opacity-80 group-hover:opacity-100 group-hover:scale-125 transition-all duration-300"></i>
+                            <i data-lucide="award" className="w-12 h-12 text-white animate-float opacity-80 group-hover:opacity-100 group-hover:scale-125 transition-all duration-300"></i>
                         </div>
                     </div>
                     <div className="p-6">
@@ -73,7 +73,7 @@ export default function Projects({ isSlider = true }) {
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/Inaamify.png" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                         <div className="absolute inset-0 bg-gray-900/40 group-hover:bg-gray-900/40 transition-all flex items-center justify-center">
-                            <i data-lucide="award" className="w-12 h-12 text-white opacity-80 group-hover:opacity-100 group-hover:scale-125 transition-all duration-300"></i>
+                            <i data-lucide="award" className="w-12 h-12 text-white animate-float opacity-80 group-hover:opacity-100 group-hover:scale-125 transition-all duration-300"></i>
                         </div>
                     </div>
                     <div className="p-6">
@@ -97,7 +97,7 @@ export default function Projects({ isSlider = true }) {
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/CSPartner.png" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                         <div className="absolute inset-0 bg-gray-900/40 group-hover:bg-gray-900/40 transition-all flex items-center justify-center">
-                            <i data-lucide="users" className="w-12 h-12 text-white opacity-80 group-hover:opacity-100 group-hover:scale-125 transition-all duration-300"></i>
+                            <i data-lucide="users" className="w-12 h-12 text-white animate-float opacity-80 group-hover:opacity-100 group-hover:scale-125 transition-all duration-300"></i>
                         </div>
                     </div>
                     <div className="p-6">
@@ -121,7 +121,7 @@ export default function Projects({ isSlider = true }) {
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/aayansh.png" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                         <div className="absolute inset-0 bg-gray-900/40 group-hover:bg-gray-900/40 transition-all flex items-center justify-center">
-                            <i data-lucide="briefcase" className="w-12 h-12 text-white opacity-80 group-hover:opacity-100 group-hover:scale-125 transition-all duration-300"></i>
+                            <i data-lucide="briefcase" className="w-12 h-12 text-white animate-float opacity-80 group-hover:opacity-100 group-hover:scale-125 transition-all duration-300"></i>
                         </div>
                     </div>
                     <div className="p-6">
@@ -144,7 +144,7 @@ export default function Projects({ isSlider = true }) {
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/Aurapark.png" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                         <div className="absolute inset-0 bg-gray-900/40 group-hover:bg-gray-900/40 transition-all flex items-center justify-center">
-                            <i data-lucide="car" className="w-12 h-12 text-white opacity-80 group-hover:opacity-100 group-hover:scale-125 transition-all duration-300"></i>
+                            <i data-lucide="car" className="w-12 h-12 text-white animate-float opacity-80 group-hover:opacity-100 group-hover:scale-125 transition-all duration-300"></i>
                         </div>
                     </div>
                     <div className="p-6">
@@ -168,7 +168,7 @@ export default function Projects({ isSlider = true }) {
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/amber-archive.png" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                         <div className="absolute inset-0 bg-gray-900/40 group-hover:bg-gray-900/40 transition-all flex items-center justify-center">
-                            <i data-lucide="shopping-cart" className="w-12 h-12 text-white opacity-80 group-hover:opacity-100 group-hover:scale-125 transition-all duration-300"></i>
+                            <i data-lucide="shopping-cart" className="w-12 h-12 text-white animate-float opacity-80 group-hover:opacity-100 group-hover:scale-125 transition-all duration-300"></i>
                         </div>
                     </div>
                     <div className="p-6">
@@ -190,7 +190,7 @@ export default function Projects({ isSlider = true }) {
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/core-archive.png" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                         <div className="absolute inset-0 bg-gray-900/40 group-hover:bg-gray-900/40 transition-all flex items-center justify-center">
-                            <i data-lucide="library" className="w-12 h-12 text-white opacity-80 group-hover:opacity-100 group-hover:scale-125 transition-all duration-300"></i>
+                            <i data-lucide="library" className="w-12 h-12 text-white animate-float opacity-80 group-hover:opacity-100 group-hover:scale-125 transition-all duration-300"></i>
                         </div>
                     </div>
                     <div className="p-6">
@@ -214,7 +214,7 @@ export default function Projects({ isSlider = true }) {
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/Syntax-academy.png" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                         <div className="absolute inset-0 bg-gray-900/40 group-hover:bg-gray-900/40 transition-all flex items-center justify-center">
-                            <i data-lucide="graduation-cap" className="w-12 h-12 text-white opacity-80 group-hover:opacity-100 group-hover:scale-125 transition-all duration-300"></i>
+                            <i data-lucide="graduation-cap" className="w-12 h-12 text-white animate-float opacity-80 group-hover:opacity-100 group-hover:scale-125 transition-all duration-300"></i>
                         </div>
                     </div>
                     <div className="p-6">
@@ -237,7 +237,7 @@ export default function Projects({ isSlider = true }) {
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/risk-flight.png" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                         <div className="absolute inset-0 bg-gray-900/40 group-hover:bg-gray-900/40 transition-all flex items-center justify-center">
-                            <i data-lucide="book-open" className="w-12 h-12 text-white opacity-80 group-hover:opacity-100 group-hover:scale-125 transition-all duration-300"></i>
+                            <i data-lucide="book-open" className="w-12 h-12 text-white animate-float opacity-80 group-hover:opacity-100 group-hover:scale-125 transition-all duration-300"></i>
                         </div>
                     </div>
                     <div className="p-6">
@@ -260,7 +260,7 @@ export default function Projects({ isSlider = true }) {
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/nurture.png" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                         <div className="absolute inset-0 bg-gray-900/40 group-hover:bg-gray-900/40 transition-all flex items-center justify-center">
-                            <i data-lucide="heart" className="w-12 h-12 text-white opacity-80 group-hover:opacity-100 group-hover:scale-125 transition-all duration-300"></i>
+                            <i data-lucide="heart" className="w-12 h-12 text-white animate-float opacity-80 group-hover:opacity-100 group-hover:scale-125 transition-all duration-300"></i>
                         </div>
                     </div>
                     <div className="p-6">
@@ -286,7 +286,7 @@ export default function Projects({ isSlider = true }) {
                     <div className="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/fullstack.png" alt="Project Preview" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                         <div className="absolute inset-0 bg-gray-900/40 group-hover:bg-gray-900/40 transition-all flex items-center justify-center">
-                            <i data-lucide="user" className="w-12 h-12 text-white opacity-80 group-hover:opacity-100 group-hover:scale-125 transition-all duration-300"></i>
+                            <i data-lucide="user" className="w-12 h-12 text-white animate-float opacity-80 group-hover:opacity-100 group-hover:scale-125 transition-all duration-300"></i>
                         </div>
                     </div>
                     <div className="p-6">
