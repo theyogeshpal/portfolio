@@ -5,7 +5,7 @@ export default function TechStack() {
     {
       title: "Frontend Engineering",
       icon: "layout",
-      skills: ["React.js", "JavaScript (ES6+)", "Tailwind CSS", "HTML5 & CSS3", "Bootstrap"]
+      skills: ["React.js & Angular", "JavaScript / TypeScript", "Tailwind CSS & Bootstrap", "AOS & SwiperJS", "HTML5 & CSS3"]
     },
     {
       title: "Backend & APIs",
