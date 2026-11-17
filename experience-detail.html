@@ -1,158 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experience Details - Yogesh Pal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Experience & Career | Best Software Developer in Bareilly - Yogesh Pal</title>
+    
+    <meta name="description" content="Detailed engineering career and work experience of Yogesh Pal - the best software developer in Bareilly, Uttar Pradesh at Digicoders Technologies.">
+    <meta name="keywords" content="yogesh pal experience, best software developer in bareilly resume, dotnet engineer bareilly experience">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yogesh-pal.netlify.app/experience-detail.html">
+
     <link rel="shortcut icon" href="assets/yogesh.png" type="image/x-icon">
-
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>body { font-family: 'Roboto Mono', monospace; }</style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans antialiased selection:bg-orange-500 selection:text-white">
+<body class="bg-gray-50 text-gray-900 overflow-x-hidden">
 
-    <!-- Navbar -->
-    <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 shadow-sm border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <a href="index.html" class="flex items-center gap-2 group">
-                    <div class="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-700 rounded-xl flex items-center justify-center text-white font-bold text-xl group-hover:scale-105 transition-transform shadow-lg shadow-orange-500/30">
-                        Y
-                    </div>
-                    <span class="font-bold text-xl tracking-tight text-gray-900 group-hover:text-orange-600 transition-colors">Yogesh Pal</span>
+<!-- Navbar -->
+<nav id="navbar" class="fixed w-full z-50 transition-all duration-300 top-0 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+    <div class="absolute bottom-0 left-0 w-full h-1 bg-white/10">
+        <div id="scroll-progress" class="h-full bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 w-0 transition-all duration-150 shadow-lg shadow-orange-500/50"></div>
+    </div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <div class="flex-shrink-0 flex items-center">
+                <a href="index.html" class="text-2xl font-bold text-gray-900 group">
+                    <span class="text-orange-600">Yogesh</span>Pal
                 </a>
-                <div class="hidden md:flex space-x-8">
-                    <a href="index.html" class="text-gray-600 hover:text-orange-600 font-semibold transition-colors flex items-center gap-1"><i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Portfolio</a>
-                </div>
-                <div class="md:hidden">
-                    <a href="index.html" class="text-gray-900 p-2"><i data-lucide="arrow-left"></i></a>
-                </div>
             </div>
-        </div>
-    </nav>
-
-    <!-- Content -->
-    <div class="pt-32 pb-20 min-h-screen flex flex-col">
-        <div class="max-w-4xl mx-auto px-4 w-full flex-grow">
             
-            <div id="exp-container" class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden hidden">
-                <div class="h-48 md:h-64 bg-gradient-to-br from-gray-800 to-gray-900 relative flex items-center justify-center overflow-hidden">
-                    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
-                    <div id="e-company-logo-container" class="relative z-10 bg-white p-4 rounded-2xl border-4 border-white/10 shadow-2xl hidden">
-                        <img id="e-company-logo" src="" alt="Company Logo" class="w-24 h-24 md:w-32 md:h-32 object-contain mix-blend-multiply">
-                    </div>
-                    <i id="e-company-icon" data-lucide="building-2" class="w-24 h-24 text-white/50 relative z-10"></i>
-                </div>
-                
-                <div class="p-8 md:p-12 relative">
-                    <!-- Floating Date Badge -->
-                    <div class="md:absolute md:top-12 md:right-12 mb-6 md:mb-0">
-                        <span id="e-duration" class="bg-orange-100 text-orange-700 font-bold px-4 py-2 rounded-full border border-orange-200">2025 - Present</span>
-                    </div>
-
-                    <h1 id="e-title" class="text-4xl md:text-5xl font-bold text-gray-900 mb-2">Job Title</h1>
-                    <div class="flex items-center gap-2 text-gray-500 mb-8">
-                        <i data-lucide="map-pin" class="w-4 h-4"></i>
-                        <span id="e-company" class="font-medium text-lg">Company Name</span>
-                        <span class="mx-2">•</span>
-                        <span id="e-location">Location</span>
-                    </div>
-                    
-                    <div class="mb-10">
-                        <h3 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-3">Technologies Used</h3>
-                        <div id="e-tech" class="flex flex-wrap gap-2">
-                            <!-- Tech stack will be injected here -->
-                        </div>
-                    </div>
-                    
-                    <div class="prose max-w-none text-gray-600 text-lg leading-relaxed mb-10">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Overview</h3>
-                        <p id="e-description" class="mb-6">Description</p>
-                        
-                        <div id="e-image-container" class="my-8 rounded-2xl overflow-hidden shadow-xl border-4 border-white bg-gray-100 hidden">
-                            <img id="e-image" src="" alt="Experience Image" class="w-full h-auto max-h-[600px] object-cover hover:scale-105 transition-transform duration-700">
-                        </div>
-                        
-                        <h3 class="text-2xl font-bold text-gray-900 mb-4 mt-8">Key Responsibilities & Achievements</h3>
-                        <ul id="e-details" class="list-disc pl-6 space-y-3 marker:text-orange-500">
-                            <!-- Details injected here -->
-                        </ul>
-                    </div>
-                    
-                    <div class="pt-6 border-t border-gray-100">
-                        <a href="index.html#experience" class="inline-flex items-center gap-2 text-orange-600 font-semibold hover:text-orange-700 transition-colors">
-                            <i data-lucide="arrow-left" class="w-5 h-5"></i>
-                            Back to Experiences
-                        </a>
-                    </div>
-                </div>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="index.html#home" class="nav-link text-gray-700 hover:text-orange-600 font-semibold relative group py-1">Home</a>
+                <a href="index.html#about" class="nav-link text-gray-700 hover:text-orange-600 font-semibold relative group py-1">About</a>
+                <a href="index.html#experience" class="nav-link text-orange-600 font-semibold relative group py-1">Experience<span class="absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-orange-500 to-orange-700 rounded-full w-full"></span></a>
+                <a href="projects.html" class="nav-link text-gray-700 hover:text-orange-600 font-semibold relative group py-1">Projects</a>
+                <a href="services.html" class="nav-link text-gray-700 hover:text-orange-600 font-semibold relative group py-1">Services</a>
+                <a href="gallery.html" class="nav-link text-gray-700 hover:text-orange-600 font-semibold relative group py-1">Gallery</a>
+                <a href="index.html#contact" class="bg-gradient-to-r from-orange-500 to-orange-700 text-white px-6 py-2.5 rounded-full font-semibold text-[15px] flex items-center gap-2 hover:shadow-xl hover:shadow-orange-500/30 hover:scale-105 transition-all">
+                    Let's Talk
+                    <i data-lucide="message-circle" class="w-4 h-4"></i>
+                </a>
             </div>
 
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-btn" aria-label="Toggle Menu" class="text-gray-900 hover:text-orange-600 focus:outline-none p-2">
+                    <i data-lucide="menu" id="menu-icon"></i>
+                </button>
+            </div>
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-950 text-gray-400 py-12 text-center border-t border-gray-900 mt-auto">
-        <div class="max-w-7xl mx-auto px-4">
-            <p>Made with ❤️ by Yogesh Pal. &copy; <span id="year"></span> All rights reserved.</p>
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#0a0a0a] border-t border-gray-800 absolute w-full shadow-2xl max-h-[85vh] overflow-y-auto pb-10">
+        <div class="px-4 pt-3 pb-6 space-y-2">
+            <a href="index.html#home" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-base font-semibold text-gray-200 hover:text-orange-500 hover:bg-[#1a1a1a]">Home</a>
+            <a href="index.html#about" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-base font-semibold text-gray-200 hover:text-orange-500 hover:bg-[#1a1a1a]">About</a>
+            <a href="index.html#experience" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-base font-semibold text-orange-500 bg-[#1a1a1a]">Experience</a>
+            <a href="projects.html" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-base font-semibold text-gray-200 hover:text-orange-500 hover:bg-[#1a1a1a]">Projects</a>
+            <a href="services.html" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-base font-semibold text-gray-200 hover:text-orange-500 hover:bg-[#1a1a1a]">Services</a>
+            <a href="gallery.html" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-base font-semibold text-gray-200 hover:text-orange-500 hover:bg-[#1a1a1a]">Gallery</a>
+
+            <a href="index.html#contact" class="flex mt-4 justify-center items-center gap-2 bg-gradient-to-r from-orange-500 to-orange-700 text-white px-6 py-3 rounded-xl font-semibold">
+                Let's Talk
+                <i data-lucide="message-circle" class="w-5 h-5"></i>
+            </a>
         </div>
-    </footer>
+    </div>
+</nav>
 
-    <!-- Load Data and Script -->
-    <script src="data.js"></script>
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-        
-        const exp = portfolioData.experience;
-        
-        if (exp) {
-            document.getElementById('exp-container').classList.remove('hidden');
-            
-            document.getElementById('e-title').textContent = exp.title;
-            document.getElementById('e-company').textContent = exp.company;
-            document.getElementById('e-location').textContent = exp.location;
-            document.getElementById('e-duration').textContent = exp.duration;
-            document.getElementById('e-description').textContent = exp.description;
-            
-            if (exp.image) {
-                const imgContainer = document.getElementById('e-image-container');
-                const img = document.getElementById('e-image');
-                img.src = exp.image;
-                imgContainer.classList.remove('hidden');
-            }
-            
-            if (exp.companyLogo) {
-                const logoContainer = document.getElementById('e-company-logo-container');
-                const logo = document.getElementById('e-company-logo');
-                const icon = document.getElementById('e-company-icon');
-                logo.src = exp.companyLogo;
-                logoContainer.classList.remove('hidden');
-                logoContainer.classList.add('flex');
-                if (icon) icon.classList.add('hidden');
-            }
-            
-            // Set Tech Stack
-            const techContainer = document.getElementById('e-tech');
-            exp.techStack.forEach(tech => {
-                const span = document.createElement('span');
-                span.className = 'font-semibold bg-gray-100 text-gray-700 border border-gray-200 px-3 py-1 rounded-md text-sm';
-                span.textContent = tech;
-                techContainer.appendChild(span);
-            });
+<!-- Content -->
+<main class="pt-28 pb-16 min-h-[85vh]">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-8">
+            <a href="index.html#experience" class="inline-flex items-center gap-2 text-sm font-semibold text-gray-600 hover:text-orange-600 transition-colors">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Experience
+            </a>
+        </div>
 
-            // Set Details
-            const detailsContainer = document.getElementById('e-details');
-            exp.details.forEach(item => {
-                const li = document.createElement('li');
-                li.textContent = item;
-                detailsContainer.appendChild(li);
-            });
-            
-            // Initialize Lucide Icons
-            lucide.createIcons();
-        }
-    </script>
+        <div id="exp-container" class="bg-white rounded-3xl p-6 sm:p-10 shadow-lg border border-gray-100">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-gray-100 pb-8 mb-8">
+                <div class="flex items-center gap-4">
+                    <div id="e-company-logo-container" class="w-16 h-16 bg-orange-50 rounded-2xl flex items-center justify-center p-2 border border-orange-100">
+                        <img id="e-company-logo" src="assets/digicoders-logo-circle.png" alt="Company Logo" class="w-full h-full object-contain" />
+                    </div>
+                    <div>
+                        <h1 id="e-title" class="text-2xl sm:text-3xl font-bold text-gray-900">Dot Net Developer</h1>
+                        <p id="e-company" class="text-lg font-semibold text-orange-600">Digicoders Technologies Pvt. Ltd.</p>
+                    </div>
+                </div>
+                <div class="text-left sm:text-right">
+                    <span id="e-duration" class="inline-block bg-orange-100 text-orange-700 font-bold px-3.5 py-1.5 rounded-full text-xs sm:text-sm">2025 - Present</span>
+                    <p id="e-location" class="text-xs sm:text-sm text-gray-500 mt-1">Lucknow, UP &bull; Bareilly Regional Base</p>
+                </div>
+            </div>
+
+            <div class="mb-8">
+                <h2 class="text-lg font-bold text-gray-900 mb-3">Role Overview</h2>
+                <p id="e-description" class="text-gray-600 text-base sm:text-lg leading-relaxed">
+                    Working as a full-stack engineer developing enterprise ASP.NET Core MVC systems, architecting high-throughput REST APIs, optimizing MSSQL database performance, and building responsive frontends. Recognized with the "Star Performance" award for engineering excellence and problem solving.
+                </p>
+            </div>
+
+            <div class="mb-8">
+                <h2 class="text-lg font-bold text-gray-900 mb-3">Core Technologies</h2>
+                <div id="e-tech" class="flex flex-wrap gap-2">
+                    <span class="font-semibold bg-gray-100 text-gray-700 border border-gray-200 px-3 py-1 rounded-md text-sm">ASP.NET Core</span>
+                    <span class="font-semibold bg-gray-100 text-gray-700 border border-gray-200 px-3 py-1 rounded-md text-sm">C#</span>
+                    <span class="font-semibold bg-gray-100 text-gray-700 border border-gray-200 px-3 py-1 rounded-md text-sm">MSSQL Server</span>
+                    <span class="font-semibold bg-gray-100 text-gray-700 border border-gray-200 px-3 py-1 rounded-md text-sm">Entity Framework</span>
+                    <span class="font-semibold bg-gray-100 text-gray-700 border border-gray-200 px-3 py-1 rounded-md text-sm">RESTful APIs</span>
+                    <span class="font-semibold bg-gray-100 text-gray-700 border border-gray-200 px-3 py-1 rounded-md text-sm">Bootstrap & Tailwind</span>
+                </div>
+            </div>
+
+            <div class="mb-8">
+                <h2 class="text-lg font-bold text-gray-900 mb-3">Key Responsibilities & Highlights</h2>
+                <ul id="e-details" class="list-disc list-inside space-y-2 text-gray-600 text-base leading-relaxed">
+                    <li>Developed and deployed high-performance web applications using ASP.NET Core MVC and C#.</li>
+                    <li>Designed normalized database schemas, stored procedures, and optimized queries in Microsoft SQL Server.</li>
+                    <li>Constructed secure, token-based RESTful APIs consumed by modern single-page applications.</li>
+                    <li>Collaborated in Agile/Scrum sprints, conducting code reviews, Git version control, and CI/CD testing.</li>
+                </ul>
+            </div>
+
+            <div id="e-image-container" class="rounded-2xl overflow-hidden shadow-md border border-gray-100">
+                <img id="e-image" src="assets/star-performance.jpeg" alt="Star Performance Award" class="w-full max-h-[500px] object-cover object-center" />
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-[#050505] text-gray-400 pt-16 pb-10 border-t border-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left">
+        <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
+            <p>&copy; 2026 Yogesh Pal &bull; Best Software Developer in Bareilly. All rights reserved.</p>
+            <div class="flex gap-4">
+                <a href="index.html#home" class="hover:text-white transition-colors">Home</a>
+                <a href="projects.html" class="hover:text-white transition-colors">Projects</a>
+                <a href="index.html#contact" class="hover:text-white transition-colors">Contact</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+<script>
+    if (window.lucide) lucide.createIcons();
+</script>
 </body>
 </html>

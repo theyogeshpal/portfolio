@@ -1,32 +1,47 @@
-/* Custom Scrollbar, directly matching the reference theme */
+/* Responsive Reset & Global Box Sizing */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: linear-gradient(to bottom, #f9fafb, #f3f4f6);
-  border-radius: 10px;
+  background: #0a0a0a;
 }
 
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(to bottom, #f97316, #ea580c);
   border-radius: 10px;
-  border: 2px solid #f3f4f6;
+  border: 2px solid #0a0a0a;
   transition: all 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(to bottom, #ea580c, #c2410c);
-  border: 2px solid #e5e7eb;
-}
-
-::-webkit-scrollbar-thumb:active {
-  background: linear-gradient(to bottom, #c2410c, #9a3412);
 }
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: #f97316 #f3f4f6;
+  scrollbar-color: #ea580c #0a0a0a;
 }
 
 /* Typing animation for hero section */
@@ -34,8 +49,8 @@
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 3px solid #ffffff;
-  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+  border-right: 3px solid #f97316;
+  animation: typing 3.5s steps(35, end), blink-caret .75s step-end infinite;
   max-width: 100%;
 }
 
@@ -46,8 +61,19 @@
 
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: #ffffff; }
+  50% { border-color: #f97316; }
 }
+
+/* Float animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float { animation: float 3s ease-in-out infinite; }
+.animate-float-delayed { animation: float 4s ease-in-out infinite 1s; }
+.animate-float-slow { animation: float 6s ease-in-out infinite; }
 
 /* Custom fade in up animation */
 @keyframes fadeInUp {
@@ -65,5 +91,15 @@
   animation: fadeInUp 0.8s ease-out forwards;
 }
 
+/* Scrollbar Utility */
 .hide-scrollbar::-webkit-scrollbar { display: none; }
 .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Responsive Container helpers */
+@media (max-width: 640px) {
+  .type-text {
+    white-space: normal;
+    border-right: none;
+    animation: none;
+  }
+}

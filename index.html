@@ -2,24 +2,107 @@
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yogesh Pal - Portfolio | Full Stack Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Best Software Developer in Bareilly | Yogesh Pal - Full Stack & .NET Developer</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Looking for the best software developer in Bareilly? Yogesh Pal is a top-rated Full Stack and .NET Developer in Bareilly, Uttar Pradesh specializing in ASP.NET Core, React, Mobile Apps, REST APIs, and scalable digital solutions. Hire top talent today!">
+    <meta name="keywords" content="best software developer in bareilly, top software developer in bareilly, software developer bareilly, web developer bareilly, full stack developer bareilly, dotnet developer bareilly, freelance developer bareilly, software engineer in bareilly, bareilly it company, web development bareilly">
+    <meta name="author" content="Yogesh Pal">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yogesh-pal.netlify.app/">
+
+    <!-- Geo Tags for Bareilly Local Ranking -->
+    <meta name="geo.region" content="IN-UP">
+    <meta name="geo.placename" content="Bareilly">
+    <meta name="geo.position" content="28.3670;79.4304">
+    <meta name="ICBM" content="28.3670, 79.4304">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yogesh-pal.netlify.app/">
+    <meta property="og:title" content="Best Software Developer in Bareilly | Yogesh Pal">
+    <meta property="og:description" content="Award-winning Full Stack & .NET Developer in Bareilly providing enterprise web, mobile apps, and scalable software solutions.">
+    <meta property="og:image" content="https://yogesh-pal.netlify.app/assets/yogesh.png">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:site_name" content="Yogesh Pal Portfolio">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://yogesh-pal.netlify.app/">
+    <meta name="twitter:title" content="Best Software Developer in Bareilly | Yogesh Pal">
+    <meta name="twitter:description" content="Looking for the top software engineer & full-stack developer in Bareilly? Explore projects, services & get in touch.">
+    <meta name="twitter:image" content="https://yogesh-pal.netlify.app/assets/yogesh.png">
+
+    <!-- Structured Data (JSON-LD) for Local SEO & Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://yogesh-pal.netlify.app/#person",
+          "name": "Yogesh Pal",
+          "jobTitle": "Best Software Developer in Bareilly",
+          "url": "https://yogesh-pal.netlify.app/",
+          "image": "https://yogesh-pal.netlify.app/assets/yogesh.png",
+          "telephone": "+917817095043",
+          "email": "yogeshpal1309@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bareilly",
+            "addressRegion": "Uttar Pradesh",
+            "addressCountry": "IN"
+          },
+          "knowsAbout": ["Software Development", "Full Stack Development", ".NET Core", "C#", "React.js", "Mobile App Development", "REST APIs", "SQL Server", "Web Architecture"]
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://yogesh-pal.netlify.app/#service",
+          "name": "Yogesh Pal - Best Software Developer in Bareilly",
+          "url": "https://yogesh-pal.netlify.app/",
+          "telephone": "+917817095043",
+          "priceRange": "$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Bareilly City",
+            "addressLocality": "Bareilly",
+            "addressRegion": "Uttar Pradesh",
+            "postalCode": "243001",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 28.3670,
+            "longitude": 79.4304
+          },
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Bareilly"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Uttar Pradesh"
+            },
+            {
+              "@type": "Country",
+              "name": "India"
+            }
+          ],
+          "description": "Premium software, website, and mobile app development services in Bareilly, Uttar Pradesh by Yogesh Pal."
+        }
+      ]
+    }
+    </script>
+
     <link rel="shortcut icon" href="assets/yogesh.png" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="style.css">
-    <!-- From React index.css -->
     <style>
         body { font-family: 'Roboto Mono', monospace; }
-        @keyframes float {
-          0% { transform: translateY(0px); }
-          50% { transform: translateY(-10px); }
-          100% { transform: translateY(0px); }
-        }
-        .animate-float { animation: float 3s ease-in-out infinite; }
-        .animate-float-delayed { animation: float 4s ease-in-out infinite 1s; }
-        .animate-float-slow { animation: float 6s ease-in-out infinite; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900 overflow-x-hidden">
@@ -80,31 +163,40 @@
     </nav>
 
 <!-- Home -->
-<section id="home" class="relative pt-20 pb-28 md:pt-36 md:pb-36 px-4 bg-[#0a0a0a] overflow-hidden min-h-[95vh] flex items-center">
-        
-        <div class="absolute bottom-0 right-0 h-[85%] md:h-[95%] w-full flex justify-end items-end z-0 translate-x-[25%] md:translate-x-[25%] opacity-60 md:opacity-100 pointer-events-none">
-            <img src="assets/hero-image.png" alt="Yogesh Pal" class="h-full w-auto object-contain object-bottom grayscale opacity-90 mix-blend-luminosity scale-[1.4] sm:scale-[1.2] md:scale-100 origin-bottom-right animate-float-slow" />
+<section id="home" class="relative pt-24 pb-20 sm:pt-32 sm:pb-28 md:pt-36 md:pb-36 px-4 bg-[#0a0a0a] overflow-hidden min-h-[92vh] flex items-center">
+        <!-- Background Hero Image (Optimized for Mobile & Desktop) -->
+        <div class="absolute bottom-0 right-0 h-[60%] sm:h-[75%] md:h-[95%] w-full flex justify-end items-end z-0 translate-x-[15%] sm:translate-x-[20%] md:translate-x-[25%] opacity-30 sm:opacity-50 md:opacity-100 pointer-events-none">
+            <img src="assets/hero-image.png" alt="Best Software Developer in Bareilly - Yogesh Pal" class="h-full w-auto object-contain object-bottom grayscale opacity-90 mix-blend-luminosity scale-[1.15] sm:scale-100 origin-bottom-right animate-float-slow" />
         </div>
 
         <div class="max-w-7xl mx-auto w-full relative z-10">
-            <div class="w-full md:w-[65%] lg:w-[60%] text-center md:text-left mx-auto md:mx-0">
-                <div class="text-2xl text-gray-400 mb-6" style="font-family: 'Caveat', cursive;">
-                    Yogesh Pal
+            <div class="w-full md:w-[68%] lg:w-[62%] text-center md:text-left mx-auto md:mx-0">
+                <!-- Local Authority SEO Badge -->
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs sm:text-sm font-semibold mb-6 backdrop-blur-sm">
+                    <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
+                    Best Software Developer in Bareilly, UP
                 </div>
-                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight mb-8 font-mono leading-tight">
+
+                <div class="text-xl sm:text-2xl text-gray-400 mb-4 sm:mb-6" style="font-family: 'Caveat', cursive;">
+                    Yogesh Pal &mdash; Full Stack Engineer
+                </div>
+                
+                <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight mb-6 sm:mb-8 font-mono leading-tight">
                     I am a<br />
-                    <span class="type-text text-gray-300 block mt-4">DotNet developer.</span>
+                    <span class="type-text text-gray-200 block mt-2 sm:mt-4 text-2xl sm:text-4xl md:text-5xl lg:text-6xl text-orange-500">DotNet developer.</span>
                 </h1>
-                <p class="text-lg text-gray-400 text-justify mb-10 max-w-xl mx-auto md:mx-0 leading-relaxed font-semibold">
-                    Bringing your ideas to life with clean, efficient, and scalable code. Whether it's building robust web apps, optimizing backend performance, or solving complex technical challenges.
+                
+                <p class="text-base sm:text-lg text-gray-400 text-center md:text-justify mb-8 sm:mb-10 max-w-xl mx-auto md:mx-0 leading-relaxed font-normal sm:font-semibold">
+                    Bringing your ideas to life with clean, scalable, and high-performance code. As the top software developer in Bareilly, I engineer robust enterprise web systems, high-speed APIs, and seamless digital products.
                 </p>
+                
                 <div class="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
-                    <a href="assets/YogeshPalCV.pdf" download class="text-white px-8 py-3 hover:text-gray-300 transition-all font-semibold text-sm flex items-center gap-2">
+                    <a href="assets/YogeshPalCV.pdf" download class="w-full sm:w-auto text-center justify-center text-white bg-white/10 hover:bg-white/20 px-7 py-3.5 rounded-full transition-all font-semibold text-sm flex items-center gap-2 border border-white/20">
                         Download CV
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
                     </a>
-                    <a href="#contact" class="bg-[#2a2a2a] text-white px-8 py-3 rounded hover:bg-[#3a3a3a] transition-all font-semibold text-sm">
-                        Contact me
+                    <a href="#contact" class="w-full sm:w-auto text-center justify-center bg-gradient-to-r from-orange-500 to-orange-700 text-white px-8 py-3.5 rounded-full hover:shadow-lg hover:shadow-orange-500/30 hover:scale-105 transition-all font-semibold text-sm">
+                        Contact Me
                     </a>
                 </div>
             </div>
@@ -123,7 +215,7 @@
             <div class="flex flex-col md:flex-row gap-12 items-center">
                 <div class="flex-1 space-y-6 text-lg text-gray-600 text-justify leading-relaxed">
                     <p>
-                        Hello! I'm <strong>Yogesh Pal</strong>, a dedicated Full Stack Developer and CSE student with a passion for building high-performance web applications. My expertise spans across the entire development lifecycle, from architecting robust backends using ASP.NET Core and Spring Boot to crafting modern, responsive frontends with React.js, Tailwind CSS, and Bootstrap.
+                        Hello! I'm <strong>Yogesh Pal</strong>, recognized as one of the <strong>best software developers in Bareilly, Uttar Pradesh</strong>. I am a dedicated Full Stack Developer and CSE engineer with a passion for building scalable, high-performance web and enterprise applications. My expertise spans across the entire development lifecycle, from architecting robust backends using ASP.NET Core and Spring Boot to crafting modern, responsive frontends with React.js, Tailwind CSS, and Bootstrap.
                     </p>
                     <p>
                         I specialize in creating seamless user experiences powered by efficient Rest APIs and SQL databases (MSSQL & MySQL). My technical toolkit is further enhanced by advanced animation libraries like GSAP and AOS, ensuring every project I deliver is not just functional, but visually exceptional.
@@ -142,9 +234,9 @@
                 </div>
                 
                 <div class="flex-1 relative w-full md:pl-8">
-                    <div class="absolute inset-0 bg-orange-100 rounded-[2rem] transform translate-x-4 translate-y-4"></div>
+                    <div class="absolute inset-0 bg-orange-100 rounded-[2rem] transform translate-x-2 translate-y-2 md:translate-x-4 md:translate-y-4"></div>
                     <div class="relative rounded-[2rem] overflow-hidden shadow-xl border-4 border-white">
-                        <img src="assets/P1119422.JPG" alt="About Yogesh Pal" class="w-full h-[750px] object-cover object-top hover:scale-105 transition-transform duration-700" />
+                        <img src="assets/P1119422.JPG" alt="About Yogesh Pal" class="w-full h-[360px] sm:h-[480px] md:h-[550px] lg:h-[620px] object-cover object-top hover:scale-105 transition-transform duration-700" />
                     </div>
                 </div>
             </div>
@@ -448,7 +540,7 @@
             
             <div class="flex overflow-x-auto gap-8 pb-8 snap-x snap-mandatory scroll-smooth hide-scrollbar" style="scrollbar-width: none; -ms-overflow-style: none;">
                 
-                <div data-category="web" class="project-card block min-w-[85vw] md:min-w-[400px] snap-center shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onclick="window.location.href='project-detail.html?id=safedrivetag'">
+                <div data-category="web" class="project-card block min-w-[85vw] sm:min-w-[340px] md:min-w-[380px] snap-center shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onclick="window.location.href='project-detail.html?id=safedrivetag'">
                     <div class="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/safedrivetag.png" onerror="this.src='./assets/fullstack.png'" alt="Project Preview" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                         <div class="absolute inset-0 bg-gray-900/40 group-hover:bg-gray-900/40 transition-all flex items-center justify-center">
@@ -469,7 +561,7 @@
                     </div>
                 </div>
                 
-                <div data-category="app" class="project-card block min-w-[85vw] md:min-w-[400px] snap-center shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onclick="window.location.href='project-detail.html?id=syncattend'">
+                <div data-category="app" class="project-card block min-w-[85vw] sm:min-w-[340px] md:min-w-[380px] snap-center shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onclick="window.location.href='project-detail.html?id=syncattend'">
 
                     <div class="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/syncAttend.jpeg" alt="Project Preview" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -492,7 +584,7 @@
                     </div>
                 </div>
                 
-                <div data-category="web" class="project-card block min-w-[85vw] md:min-w-[400px] snap-center shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onclick="window.location.href='project-detail.html?id=inaamify'">
+                <div data-category="web" class="project-card block min-w-[85vw] sm:min-w-[340px] md:min-w-[380px] snap-center shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onclick="window.location.href='project-detail.html?id=inaamify'">
 
                     <div class="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/Inaamify.png" alt="Project Preview" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -516,7 +608,7 @@
                 </div>
 
                 
-                <div data-category="web" class="project-card block min-w-[85vw] md:min-w-[400px] snap-center shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onclick="window.location.href='project-detail.html?id=cspartner'">
+                <div data-category="web" class="project-card block min-w-[85vw] sm:min-w-[340px] md:min-w-[380px] snap-center shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onclick="window.location.href='project-detail.html?id=cspartner'">
 
                     <div class="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/CSPartner.png" alt="Project Preview" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -540,7 +632,7 @@
                 </div>
 
                 
-                <div data-category="web" class="project-card block min-w-[85vw] md:min-w-[400px] snap-center shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onclick="window.location.href='project-detail.html?id=aayansh'">
+                <div data-category="web" class="project-card block min-w-[85vw] sm:min-w-[340px] md:min-w-[380px] snap-center shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onclick="window.location.href='project-detail.html?id=aayansh'">
 
                     <div class="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/aayansh.png" alt="Project Preview" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -563,7 +655,7 @@
                     </div>
                 </div>
                 
-                <div data-category="web" class="project-card block min-w-[85vw] md:min-w-[400px] snap-center shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onclick="window.location.href='project-detail.html?id=aurapark'">
+                <div data-category="web" class="project-card block min-w-[85vw] sm:min-w-[340px] md:min-w-[380px] snap-center shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onclick="window.location.href='project-detail.html?id=aurapark'">
 
                     <div class="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/Aurapark.png" alt="Project Preview" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -587,7 +679,7 @@
                 </div>
 
                 
-                <div data-category="web" class="project-card block min-w-[85vw] md:min-w-[400px] snap-center shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onclick="window.location.href='project-detail.html?id=amber'">
+                <div data-category="web" class="project-card block min-w-[85vw] sm:min-w-[340px] md:min-w-[380px] snap-center shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onclick="window.location.href='project-detail.html?id=amber'">
 
                     <div class="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/amber-archive.png" alt="Project Preview" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -609,7 +701,7 @@
                 </div>
 
                 
-                <div data-category="web" class="project-card block min-w-[85vw] md:min-w-[400px] snap-center shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onclick="window.location.href='project-detail.html?id=corearchive'">
+                <div data-category="web" class="project-card block min-w-[85vw] sm:min-w-[340px] md:min-w-[380px] snap-center shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onclick="window.location.href='project-detail.html?id=corearchive'">
 
                     <div class="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/core-archive.png" alt="Project Preview" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -633,7 +725,7 @@
                 </div>
 
                 
-                <div data-category="web" class="project-card block min-w-[85vw] md:min-w-[400px] snap-center shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onclick="window.location.href='project-detail.html?id=syntax'">
+                <div data-category="web" class="project-card block min-w-[85vw] sm:min-w-[340px] md:min-w-[380px] snap-center shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onclick="window.location.href='project-detail.html?id=syntax'">
 
                     <div class="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/Syntax-academy.png" alt="Project Preview" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -656,7 +748,7 @@
                 </div>
 
                 
-                <div data-category="web" class="project-card block min-w-[85vw] md:min-w-[400px] snap-center shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onclick="window.location.href='project-detail.html?id=riskflight'">
+                <div data-category="web" class="project-card block min-w-[85vw] sm:min-w-[340px] md:min-w-[380px] snap-center shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onclick="window.location.href='project-detail.html?id=riskflight'">
 
                     <div class="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/risk-flight.png" alt="Project Preview" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -679,7 +771,7 @@
                 </div>
 
                 
-                <div data-category="web" class="project-card block min-w-[85vw] md:min-w-[400px] snap-center shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onclick="window.location.href='project-detail.html?id=nurture'">
+                <div data-category="web" class="project-card block min-w-[85vw] sm:min-w-[340px] md:min-w-[380px] snap-center shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onclick="window.location.href='project-detail.html?id=nurture'">
 
                     <div class="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/nurture.png" alt="Project Preview" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -705,7 +797,7 @@
                 
 
                 
-                <div data-category="web" class="project-card block min-w-[85vw] md:min-w-[400px] snap-center shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onclick="window.location.href='project-detail.html?id=portfolio'">
+                <div data-category="web" class="project-card block min-w-[85vw] sm:min-w-[340px] md:min-w-[380px] snap-center shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 cursor-pointer" onclick="window.location.href='project-detail.html?id=portfolio'">
 
                     <div class="h-48 bg-gray-200 relative overflow-hidden">
                         <img src="./assets/fullstack.png" alt="Project Preview" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -752,9 +844,9 @@
                 </p>
             </div>
             
-            <div class="grid lg:grid-cols-5 gap-12 bg-white rounded-[2.5rem] shadow-2xl shadow-gray-200/50 p-6 md:p-10 border border-gray-100">
+            <div class="grid lg:grid-cols-5 gap-12 bg-white rounded-[2.5rem] shadow-2xl shadow-gray-200/50 p-4 sm:p-8 md:p-10 border border-gray-100">
                 
-                <div class="lg:col-span-2 bg-gray-900 rounded-[2rem] p-10 text-white relative overflow-hidden flex flex-col justify-between">
+                <div class="lg:col-span-2 bg-gray-900 rounded-[1.5rem] sm:rounded-[2rem] p-6 sm:p-8 md:p-10 text-white relative overflow-hidden flex flex-col justify-between">
                     <div class="absolute top-0 right-0 w-40 h-40 bg-orange-600/30 rounded-full blur-3xl"></div>
                     <div class="absolute bottom-0 left-0 w-40 h-40 bg-blue-600/30 rounded-full blur-3xl"></div>
                     
